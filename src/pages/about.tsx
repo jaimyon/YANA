@@ -124,16 +124,15 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* ======================= TEXT OVER IMAGE — personal testimony ======================= */}
-      <section class="reveal" style="padding-top:0">
+      {/* ======================= PARALLAX BAND — our hope for you ======================= */}
+      <section
+        class="parallax-band reveal"
+        style={`background-image:url(${IMAGES.heroSunrise})`}
+      >
         <div class="wrap">
-          <div class="overlay-img overlay-hero">
-            <img src={IMAGES.heroSunrise} alt="Silhouette of a person with arms outstretched facing a bright sunrise" />
-            <div class="shade"></div>
-            <div class="caption">
-              <span class="kicker">Our hope for you</span>
-              <h2 style="max-width:20ch">You don't have to have it figured out to belong here.</h2>
-            </div>
+          <div class="caption">
+            <span class="kicker">Our hope for you</span>
+            <h2>You don't have to have it figured out to belong here.</h2>
           </div>
         </div>
       </section>

@@ -55,16 +55,15 @@ export function MinistriesPage() {
         </div>
       </section>
 
-      {/* ======================= TEXT OVER IMAGE — small groups ======================= */}
-      <section class="reveal" style="padding-top:0">
+      {/* ======================= PARALLAX BAND — small groups ======================= */}
+      <section
+        class="parallax-band reveal"
+        style={`background-image:url(${IMAGES.heroWomenPraying})`}
+      >
         <div class="wrap">
-          <div class="overlay-img overlay-hero">
-            <img src={IMAGES.heroWomenPraying} alt="Women gathered together, holding hands in prayer" />
-            <div class="shade"></div>
-            <div class="caption">
-              <span class="kicker">Small groups</span>
-              <h2 style="max-width:18ch">A living room, a few chairs, and people who actually know your story.</h2>
-            </div>
+          <div class="caption">
+            <span class="kicker">Small groups</span>
+            <h2>A living room, a few chairs, and people who actually know your story.</h2>
           </div>
         </div>
       </section>

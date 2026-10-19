@@ -91,20 +91,19 @@ export function PrayerWallPage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= TEXT OVER IMAGE — closing encouragement ======================= */}
-      <section class="reveal" style="padding-top:0">
+      {/* ======================= PARALLAX BAND — when the prayer doesn't come easy ======================= */}
+      <section
+        class="parallax-band reveal"
+        style={`background-image:url(${IMAGES.candleLighting})`}
+      >
         <div class="wrap">
-          <div class="overlay-img overlay-hero">
-            <img src={IMAGES.candleLighting} alt="A candle being lit from another candle in warm darkness" />
-            <div class="shade full"></div>
-            <div class="caption">
-              <span class="kicker">When the prayer doesn't come easy</span>
-              <h2 style="max-width:22ch">Even three words, said through tears, are enough.</h2>
-              <p style="max-width:50ch;margin-top:10px">
-                You don't need the right words. You just need to say it — we'll carry the rest
-                with you.
-              </p>
-            </div>
+          <div class="caption">
+            <span class="kicker">When the prayer doesn't come easy</span>
+            <h2>Even three words, said through tears, are enough.</h2>
+            <p>
+              You don't need the right words. You just need to say it — we'll carry the rest
+              with you.
+            </p>
           </div>
         </div>
       </section>
