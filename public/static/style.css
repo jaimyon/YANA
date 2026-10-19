@@ -165,6 +165,27 @@ section{padding:84px 0}
 .overlay-tall{aspect-ratio:3/4}
 .overlay-sq{aspect-ratio:1/1}
 
+/* ---------- full-bleed fixed-background parallax band (Unapologetically Faithful style) ----------
+   Edge-to-edge section with a pinned (background-attachment:fixed) photo and text
+   scrolling over the top — distinct from .overlay-img, which is a rounded card with
+   an <img> tag. This one is a true browser-parallax band with no rounded corners,
+   spanning full viewport width regardless of .wrap max-width. */
+.parallax-band{position:relative;min-height:62vh;display:flex;align-items:center;background-size:cover;background-position:50% 35%;background-attachment:fixed;isolation:isolate}
+.parallax-band::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(55,39,22,.18) 0%,rgba(55,39,22,.46) 55%,rgba(55,39,22,.74) 100%);z-index:0}
+.parallax-band .wrap{position:relative;z-index:1}
+.parallax-band .caption{max-width:30rem;color:#fff}
+.parallax-band .caption .kicker{color:var(--sunflower)}
+.parallax-band .caption .kicker::before{background:var(--sunflower)}
+.parallax-band .caption h2{color:#fff;max-width:14ch}
+.parallax-band .caption p{color:#F0E3CE;margin-top:14px;max-width:46ch}
+/* iOS Safari ignores background-attachment:fixed on most versions; fall back to scroll there */
+@supports (-webkit-touch-callout: none){
+  .parallax-band{background-attachment:scroll}
+}
+@media (max-width:640px){
+  .parallax-band{min-height:52vh;background-attachment:scroll}
+}
+
 /* ---------- sundays (sunlit-style schedule rows + hearth gather cards hybrid) ---------- */
 .sundays{background:var(--cream-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .gather{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}

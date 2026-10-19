@@ -12,7 +12,8 @@ export const IMAGES = {
   congregationSinging: 'https://sspark.genspark.ai/i/oFL976yVfWOXS0wr?width=1600', // diverse congregation, OK
 
   // Small groups / community
-  familyPicnic: 'https://sspark.genspark.ai/i/JXZCBVP5DDqtsb62?width=1600', // families outdoor picnic, GOOD
+  familyPicnic: 'https://sspark.genspark.ai/i/JXZCBVP5DDqtsb62?width=1600',
+  womanWindowSilhouette: 'https://sspark.genspark.ai/i/3VbN8bsE3SAxRE4o?width=2560', // woman silhouetted at sunlit window, warm/contemplative, GOOD — parallax banner // families outdoor picnic, GOOD
   familyGuitarPark: 'https://sspark.genspark.ai/i/KF9hxHHy8SKUSlwl?width=1600', // family park guitar, GOOD
   womanCozyMug: 'https://sspark.genspark.ai/i/r9h03N8T4mB09mxi?width=1600', // woman warm mug living room, GOOD
   friendsWalking: 'https://sspark.genspark.ai/i/SrsWjHl7Nsp0vDIr?width=1600', // youth group outdoors, OK

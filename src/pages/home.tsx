@@ -130,16 +130,20 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= TEXT OVER IMAGE — community moment ======================= */}
-      <section class="reveal" style="padding-top:0">
+      {/* ======================= PARALLAX BAND — Life Together (Unapologetically Faithful style) ======================= */}
+      <section
+        class="parallax-band reveal"
+        style={`background-image:url(${IMAGES.womanWindowSilhouette})`}
+      >
         <div class="wrap">
-          <div class="overlay-img overlay-hero">
-            <img src={IMAGES.familyPicnic} alt="Families sharing a picnic together outdoors on a sunny afternoon" />
-            <div class="shade"></div>
-            <div class="caption">
-              <span class="kicker">Life together</span>
-              <h2 style="max-width:16ch">Church isn't just Sunday. It's who shows up on Tuesday too.</h2>
-            </div>
+          <div class="caption">
+            <span class="kicker">Life together</span>
+            <h2>Church isn't just Sunday. It's who shows up on Tuesday too.</h2>
+            <p>
+              The quiet mornings count just as much as the gathered ones — a text when you're
+              struggling, a meal when you're grieving, a friend who sits with you in the silence
+              before the words come.
+            </p>
           </div>
         </div>
       </section>
