@@ -55,8 +55,8 @@ export const Layout: FC<LayoutProps> = ({
                 <img src={IMAGES.logo} alt="YANA logo — a glowing wooden cross" />
               </span>
               <span>
-                <b>YANA</b>
-                <small>You Are Not Alone</small>
+                <b>YANA MINISTRIES</b>
+                <small>You Are Not Alone Ministries</small>
               </span>
             </a>
             <nav class="navlinks" id="navLinks">
