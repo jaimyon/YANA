@@ -84,40 +84,6 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= YOU ARE NOT ALONE SPLIT ======================= */}
-      <section style="padding-top:0" class="reveal">
-        <div class="wrap split">
-          <figure class="shot" style="margin:0">
-            <img
-              src={IMAGES.heroWomenPraying}
-              alt="Five women sitting together on a couch, holding hands and praying"
-            />
-            <div class="badge">
-              <b>Wed · 7:00 PM</b>
-              <span>Women's group</span>
-            </div>
-          </figure>
-          <div>
-            <span class="kicker">You are not alone</span>
-            <h2>Faith grows in rooms where you're known.</h2>
-            <p style="margin-top:20px;color:var(--cocoa-soft)">
-              We're not trying to be the biggest room in town. We'd rather be the one where
-              somebody notices you slipped in late and saves you a chair anyway. Small groups, a
-              Tuesday meal, and leaders who pick up the phone.
-            </p>
-            <ul class="softlist">
-              <li>Twelve small groups meeting midweek, across the city</li>
-              <li>A Tuesday community meal that never runs out of chairs</li>
-              <li>Prayer team available after every gathering</li>
-              <li>New groups open each term — no experience needed</li>
-            </ul>
-            <a class="btn btn-ghost" href="/ministries">
-              Find a group near you
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* ======================= PARALLAX BAND — Life Together (Unapologetically Faithful style) ======================= */}
       <section
         class="parallax-band reveal"
