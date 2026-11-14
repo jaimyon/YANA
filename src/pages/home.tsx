@@ -17,9 +17,12 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
           <div class="medal">
             <img src={IMAGES.logo} alt="YANA — a wooden cross glowing with warm light, the names of God woven behind it" />
           </div>
-          <h1>
-            There's room here for <span class="em">the real you.</span>
+          <h1 style="max-width:30ch">
+            "For in Him we live and move <span class="em">and have our being.</span>"
           </h1>
+          <p style="font-size:14px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-top:14px">
+            Acts 17:28
+          </p>
           <p class="lede" style="margin-left:auto;margin-right:auto">
             YANA is a church family in [Your City] making space for honest faith — unhurried
             worship, tables that always have a chair, and people who will remember your name
