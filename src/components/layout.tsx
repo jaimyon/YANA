@@ -212,8 +212,8 @@ export const Layout: FC<LayoutProps> = ({
                     <img src={IMAGES.logo} alt="YANA logo" />
                   </span>
                   <span>
-                    <b>YANA</b>
-                    <small>You Are Not Alone</small>
+                    <b>YANA MINISTRIES</b>
+                    <small>You Are Not Alone Ministries</small>
                   </span>
                 </a>
                 <p class="fblurb">
