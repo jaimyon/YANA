@@ -1,4 +1,4 @@
-import { IMAGES } from '../images'
+rimport { IMAGES } from '../images'
 
 const NAMES_OF_GOD = [
   'Restorer', 'Helper', 'Strength', 'Savior', 'Hope', 'Resting Place',
@@ -51,27 +51,33 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         <div class="wrap">
           <div class="sec-head center">
             <span class="kicker" style="justify-content:center">
-              First time with us?
+              WE'RE SO GLAD YOU'RE HERE!
             </span>
-            <h2>Three easy steps, and we'll take it from there.</h2>
+            <h2>POPULAR SERVICES.</h2>
           </div>
           <div class="steps">
             <div class="step">
-              <span class="num">01</span>
-              <h3>Tell us you're coming</h3>
-              <p>Send us your name and which Sunday. That's the whole form — two lines, thirty seconds.</p>
+              <span class="num">Daily Email Message</span>
+              <h3>Daily encouragement in your inbox!</h3>
+              <p>Sign up to receive a thoughtful and encouraging devotional message in your inbox each day to inspire your faith...</p>
               <span class="arrow">→</span>
             </div>
             <div class="step">
-              <span class="num">02</span>
-              <h3>We'll meet you at the door</h3>
-              <p>Someone from our welcome team will be looking for you, walk you through kids check-in, and find you a seat.</p>
+              <span class="num">Monthly Message Booklet</span>
+              <h3>An invaluable resource mailed right to you!</h3>
+              <p>For those who enjoy a printed, day-by-day booklet, YANA is happy to mail one directly to your home each month...</p>
               <span class="arrow">→</span>
             </div>
             <div class="step">
-              <span class="num">03</span>
-              <h3>Then come back next week</h3>
-              <p>Coffee after the gathering, a small group that meets near you, and a standing invitation to belong.</p>
+              <span class="num">Prayer Garden</span>
+              <h3>We all need prayer!</h3>
+              <p>Send us your prayer requests and praise reports then join with us as we pray with one another for one another...</p>
+              <span class="arrow">→</span>
+            </div>
+            <div class="step">
+              <span class="num">Annual Ladies Retreat</span>
+              <h3>A powerful weekend of renewal!</h3>
+              <p>Each year we invite women to step away from the busyness of everyday life and gather for a weekend of spiritual...</p>
               <span class="arrow">→</span>
             </div>
           </div>
