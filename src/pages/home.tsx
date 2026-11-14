@@ -1,4 +1,4 @@
-rimport { IMAGES } from '../images'
+import { IMAGES } from '../images'
 
 const NAMES_OF_GOD = [
   'Restorer', 'Helper', 'Strength', 'Savior', 'Hope', 'Resting Place',
