@@ -246,7 +246,7 @@ export const Layout: FC<LayoutProps> = ({
                     <a href="#connect">Give</a>
                   </li>
                   <li>
-                    <a href="#watch">Messages</a>
+                    <a href="/about">Messages</a>
                   </li>
                   <li>
                     <a href="#connect">Contact</a>
