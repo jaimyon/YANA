@@ -38,16 +38,6 @@ export const Layout: FC<LayoutProps> = ({
         <link rel="icon" href={IMAGES.logo} />
       </head>
       <body>
-        <div class="topbar">
-          <div class="wrap">
-            <span>
-              Sundays <b>9:00</b> &amp; <b>11:00 AM</b> · YANA Center, [Street Address, Your
-              City]
-            </span>
-            <a href="#watch">Watch live →</a>
-          </div>
-        </div>
-
         <header class="nav" id="siteNav">
           <div class="navbar">
             <a class="brand" href="/">
