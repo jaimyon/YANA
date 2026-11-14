@@ -102,7 +102,7 @@ header.nav.stuck{border-color:var(--line);box-shadow:0 10px 30px -26px rgba(74,5
 .navlinks-cta{display:none}
 
 /* ---------- hero ---------- */
-.hero{position:relative;padding:62px 0 70px;text-align:center}
+.hero{position:relative;padding:62px 0 0;text-align:center}
 .glow{position:absolute;left:50%;top:-14%;transform:translateX(-50%);width:min(1080px,124vw);aspect-ratio:1.7/1;
   background:radial-gradient(60% 60% at 50% 40%,rgba(243,203,134,.6) 0%,rgba(250,230,206,.46) 42%,rgba(254,251,244,0) 74%);pointer-events:none}
 .hero .wrap{position:relative}
@@ -126,6 +126,7 @@ header.nav.stuck{border-color:var(--line);box-shadow:0 10px 30px -26px rgba(74,5
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 section{padding:84px 0}
+.hero+section{padding-top:54px}
 .section-tight{padding:56px 0}
 .sec-head{max-width:660px;margin-bottom:46px}
 .sec-head.center{margin-left:auto;margin-right:auto}
