@@ -18,15 +18,13 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             <img src={IMAGES.logo} alt="YANA — a wooden cross glowing with warm light, the names of God woven behind it" />
           </div>
           <h1 style="max-width:30ch">
-            "For in Him we live and move <span class="em">and have our being.</span>"
+            "for in <span class="em">Him</span> we live and move and have our being"
           </h1>
           <p style="font-size:14px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-top:14px">
             Acts 17:28
           </p>
           <p class="lede" style="margin-left:auto;margin-right:auto">
-            YANA is a church family in [Your City] making space for honest faith — unhurried
-            worship, tables that always have a chair, and people who will remember your name
-            the second Sunday.
+            YANA Ministries seeks to encourage, pray for, mentor, and teach others who are seeking to understand and fulfill the will of God in their lives.
           </p>
           <div class="btnrow">
             <a class="btn btn-solid" href="#connect" data-set-reason="question">
