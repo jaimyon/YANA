@@ -26,25 +26,6 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
           <p class="lede" style="margin-left:auto;margin-right:auto">
             YANA Ministries seeks to encourage, pray for, mentor, and teach others who are seeking to understand and fulfill the will of God in their lives.
           </p>
-          <div class="btnrow">
-            <a class="btn btn-solid" href="#connect" data-set-reason="question">
-              Plan your visit
-            </a>
-            <a class="btn btn-ghost" href="#watch">
-              Watch last Sunday
-            </a>
-          </div>
-          <div class="chips">
-            <span>
-              <b>Sundays</b> · 9:00 &amp; 11:00 AM
-            </span>
-            <span>
-              <b>YANA Center</b> · [Your City]
-            </span>
-            <span>
-              <b>Kids ministry</b> · nursery → Grade 6
-            </span>
-          </div>
         </div>
 
         {/* names of God scrolling banner — from sunlit */}
