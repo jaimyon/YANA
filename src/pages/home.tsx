@@ -136,36 +136,6 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= SUNDAYS AT YANA ======================= */}
-      <section class="sundays reveal">
-        <div class="wrap">
-          <div class="sec-head">
-            <span class="kicker">Sundays at YANA</span>
-            <h2>Three gatherings. Pick the one that fits.</h2>
-          </div>
-          <div class="gather">
-            <div class="g">
-              <span class="t">9:00 AM</span>
-              <span class="sub">Chapel · Classic Worship</span>
-              <p>Hymns, liturgy and communion. Quiet, grounded, and a favourite of early risers.</p>
-              <div class="len">60 minutes</div>
-            </div>
-            <div class="g">
-              <span class="t">11:00 AM</span>
-              <span class="sub">Main Hall · Contemporary</span>
-              <p>Full band, a message from Scripture, and Kids Ministry from nursery through Grade 6.</p>
-              <div class="len">75 minutes</div>
-            </div>
-            <div class="g">
-              <span class="t">6:30 PM</span>
-              <span class="sub">Prayer Room · Evening</span>
-              <p>An hour of unhurried prayer and sung worship. No announcement, no offering.</p>
-              <div class="len">60 minutes</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ======================= PRAYER WALL PREVIEW ======================= */}
       <section class="wall reveal">
         <div class="wrap">
