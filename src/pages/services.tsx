@@ -23,13 +23,13 @@ export function ServicesPage() {
       <section class="reveal" style="padding-top:0">
         <div class="wrap">
           <div class="cards-4">
-            <a class="ccard" href="#connect" data-set-reason="updates" style="text-decoration:none">
+            <a class="ccard" href="#daily-email" style="text-decoration:none">
               <span class="idx">01</span>
               <h3>Daily Email Message</h3>
               <p>[Placeholder] Sign up to receive a thoughtful and encouraging devotional message in your inbox each day to inspire your faith and carry you through whatever today holds.</p>
               <span class="link">Sign up for daily email →</span>
             </a>
-            <a class="ccard" href="#connect" data-set-reason="updates" style="text-decoration:none">
+            <a class="ccard" href="#booklet" style="text-decoration:none">
               <span class="idx">02</span>
               <h3>Monthly Messages Booklet</h3>
               <p>[Placeholder] For those who enjoy a printed, day-by-day booklet, YANA is happy to mail one directly to your home each month — no inbox required, just a quiet moment with the Word.</p>
@@ -41,7 +41,7 @@ export function ServicesPage() {
               <p>[Placeholder] Each year we invite women to step away from the busyness of everyday life and gather for a weekend of spiritual renewal, honest conversation, and rest.</p>
               <span class="link">Learn about the retreat →</span>
             </a>
-            <a class="ccard" href="#connect" data-set-reason="question" style="text-decoration:none">
+            <a class="ccard" href="#speaker" style="text-decoration:none">
               <span class="idx">04</span>
               <h3>Event Speaker</h3>
               <p>[Placeholder] Looking for a speaker for your church event, women's gathering, or conference? Our founder and team are available to share a message of hope and encouragement.</p>
@@ -52,7 +52,7 @@ export function ServicesPage() {
       </section>
 
       {/* ======================= SPLIT — Daily Email / Booklet ======================= */}
-      <section class="reveal">
+      <section class="reveal" id="daily-email">
         <div class="wrap split">
           <div>
             <span class="kicker">Daily email message</span>
@@ -82,7 +82,7 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section class="reveal" style="padding-top:0">
+      <section class="reveal" id="booklet" style="padding-top:0">
         <div class="wrap split">
           <figure class="shot" style="margin:0;order:2">
             <img src={IMAGES.servicesBooklets} alt="A stack of printed booklets and journals" />
@@ -160,7 +160,7 @@ export function ServicesPage() {
       </section>
 
       {/* ======================= EVENT SPEAKER ======================= */}
-      <section class="reveal">
+      <section class="reveal" id="speaker">
         <div class="wrap split">
           <div>
             <span class="kicker">Event speaker</span>
