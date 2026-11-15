@@ -151,7 +151,7 @@ export function ServicesPage() {
               welcoming you for another beautiful weekend of faith, fellowship, and spiritual renewal!
             </p>
             <a class="btn btn-ghost" href="#connect" data-set-reason="question">
-              Learn about the retreat
+              More Information
             </a>
           </div>
           <figure class="shot" style="margin:0">
@@ -173,7 +173,7 @@ export function ServicesPage() {
             <p style="margin-top:20px;color:var(--cocoa-soft)">
               Gilda Taylor is available to speak at and lead a variety of conferences, gatherings, and
               meetings, sharing biblical encouragement and insights to inspire and strengthen others in
-              their walk with the Lord. Past presentations have included Quest for the Virtuous Woman,
+              their walk with the Lord. Past presentations have included: Quest for the Virtuous Woman,
               Women of the Bible, Date With The King (designed especially for teen girls), and The Lord’s
               Prayer.
             </p>
