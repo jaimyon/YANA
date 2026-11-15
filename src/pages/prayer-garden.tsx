@@ -48,12 +48,12 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
                 </div>
                 <div class="field">
                   <label for="pwMessage">Your request</label>
-                  <textarea id="pwMessage" rows={3} required placeholder="How can we pray for you this week?"></textarea>
+                  <textarea id="pwMessage" rows={3} required placeholder="Share your praise report or tell us how can we pray for you."></textarea>
                 </div>
                 <div class="field">
                   <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
                     <input type="checkbox" id="pwPublic" checked style="width:auto;margin-top:3px" />
-                    <span>Share this in the public garden (otherwise it goes directly and only to our prayer team)</span>
+                    <span>Share this in the public garden (otherwise it will only be shared with our prayer team)</span>
                   </label>
                 </div>
                 <button class="btn btn-solid" type="submit" style="margin-top:18px;width:100%;justify-content:center">
