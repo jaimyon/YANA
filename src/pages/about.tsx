@@ -53,15 +53,18 @@ export function AboutPage() {
                 <span class="kicker">Our founder</span>
                 <h2>Gilda M. Taylor</h2>
                 <p style="margin-top:20px">
-                  [Placeholder bio] Gilda M. Taylor founded YANA Ministries out of a simple
-                  conviction: that no one should walk through a hard season alone. Her heart for
-                  prayer, hospitality, and honest faith shaped the ministry from its very first
-                  gathering and continues to guide YANA today.
-                </p>
-                <p>
-                  [Placeholder bio] With decades of experience in pastoral care and community
-                  outreach, Gilda has dedicated her life to encouraging others, mentoring leaders,
-                  and reminding everyone she meets that they are seen, known, and loved by God.
+                  In my life before Christ, I practiced passionate obedience without hesitation. I
+                  satisfied the desires of my heart, which included committing adultery and smoking
+                  marijuana. In 47 years I had five beautiful children, three miserable marriages,
+                  10 years of physical, mental, and emotional abuse, 10 years of sexual and mental
+                  abuse for my three daughters, and 10 years of emotional distress for my two sons.
+                  At the end of it all, I was empty, disillusioned, and sick of myself. I needed
+                  something or someone to fill the hole in my gut. I even thought going back to
+                  church might help. Then my youngest daughter invited me to go to church with her.
+                  There I found the key to living a satisfied life – total surrender to Jesus Christ!
+                  He raised my head from the pit of shame and blame that overwhelmed me. He forgave
+                  me my sins! He loved me! I came without hesitation into His arms, passionately
+                  obedient to His call for salvation.
                 </p>
                 <p class="pull-quote">"You are not alone — and neither am I."</p>
               </div>
@@ -78,25 +81,25 @@ export function AboutPage() {
             <div class="board-grid">
               <div class="board-card">
                 <div class="board-avatar">GT</div>
-                <h3>[Placeholder Name]</h3>
+                <h3>Rosalind Yoder</h3>
                 <span class="board-role">Board Chair</span>
                 <p>[Placeholder] Serving YANA Ministries since its founding, guiding vision and strategy.</p>
               </div>
               <div class="board-card">
                 <div class="board-avatar">JD</div>
-                <h3>[Placeholder Name]</h3>
+                <h3>Tyan Arii Parker-Dominguez</h3>
                 <span class="board-role">Vice Chair</span>
                 <p>[Placeholder] Brings years of nonprofit leadership experience to the board.</p>
               </div>
               <div class="board-card">
                 <div class="board-avatar">MS</div>
-                <h3>[Placeholder Name]</h3>
+                <h3>Tzan Arii Parker</h3>
                 <span class="board-role">Treasurer</span>
                 <p>[Placeholder] Oversees financial stewardship and accountability for the ministry.</p>
               </div>
               <div class="board-card">
                 <div class="board-avatar">AR</div>
-                <h3>[Placeholder Name]</h3>
+                <h3>Tvan Simmons</h3>
                 <span class="board-role">Secretary</span>
                 <p>[Placeholder] Keeps the board organized and connected to the wider congregation.</p>
               </div>
