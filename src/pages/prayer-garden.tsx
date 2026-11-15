@@ -88,9 +88,9 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
       </section>
 
       {/* ======================= PRAYER GARDEN BLURB ======================= */}
-      <section class="reveal" style="padding-top:0">
+      <section class="reveal" style="padding:52px 0">
         <div class="wrap" style="max-width:760px">
-          <p class="lede center" style="margin-left:auto;margin-right:auto">
+          <p class="lede center" style="margin:0 auto;font-size:16.24px">
             A fundamental part of being a follower of Christ is to pray for others so that
             through His grace they will be drawn to Him. At YANA Ministries, we are honored to
             pray with you for those you want to be touched by the mercy and grace of God. We are
