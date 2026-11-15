@@ -199,7 +199,11 @@ section{padding:84px 0}
 
 /* ---------- prayer wall ---------- */
 .wall{background:linear-gradient(180deg,var(--cream) 0%,var(--peach) 100%);border-top:1px solid var(--line)}
+.prayer-split{display:grid;grid-template-columns:.9fr 1.3fr;gap:50px;align-items:start}
+.prayer-form-col .pane{position:sticky;top:24px}
+.prayer-notes-col .sec-head{margin-bottom:28px}
 .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:10px}
+.prayer-notes-col .notes{grid-template-columns:repeat(2,1fr)}
 .note{background:#fff;border-radius:var(--radius-sm);padding:24px 22px 26px;box-shadow:0 20px 40px -32px rgba(74,54,40,.6);border:1px solid rgba(255,255,255,.8)}
 .note:nth-child(4n+1){transform:rotate(-1.3deg)}
 .note:nth-child(4n+2){transform:rotate(1deg)}
@@ -345,6 +349,8 @@ footer{background:var(--cream-deep);border-top:1px solid var(--line)}
   .fact-grid,.family-strip{grid-template-columns:1fr 1fr}
   .gallery{grid-template-columns:repeat(2,1fr)}
   .gallery .wide{grid-column:span 2}
+  .prayer-split{grid-template-columns:1fr;gap:38px}
+  .prayer-form-col .pane{position:static}
 }
 @media (max-width:640px){
   section{padding:58px 0}
@@ -358,6 +364,7 @@ footer{background:var(--cream-deep);border-top:1px solid var(--line)}
   .steps,.cards,.gather,.notes,.cards-4,.events,.fact-grid,.family-strip{grid-template-columns:1fr}
   .note{transform:none!important}
   .footer-links .cols{grid-template-columns:1fr}
+  .prayer-notes-col .notes{grid-template-columns:1fr}
   .shot .badge{left:12px}
   .field.row{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr 1fr}

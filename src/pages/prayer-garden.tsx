@@ -34,59 +34,55 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= ADD A REQUEST FORM ======================= */}
-      <section class="reveal" style="padding-top:0">
-        <div class="wrap" style="max-width:640px">
-          <div class="pane warm" style="padding:38px 36px">
-            <span class="kicker">Add your prayer</span>
-            <h2>What's on your heart this week?</h2>
-            <form id="prayerGardenForm" style="margin-top:8px">
-              <div class="field">
-                <label for="pwName">Name (optional)</label>
-                <input id="pwName" type="text" placeholder="First name, or leave blank for Anonymous" />
-              </div>
-              <div class="field">
-                <label for="pwMessage">Your request</label>
-                <textarea id="pwMessage" rows={3} required placeholder="How can we pray for you this week?"></textarea>
-              </div>
-              <div class="field">
-                <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
-                  <input type="checkbox" id="pwPublic" checked style="width:auto;margin-top:3px" />
-                  <span>Share this in the public garden below (otherwise it goes directly and only to our prayer team)</span>
-                </label>
-              </div>
-              <button class="btn btn-solid" type="submit" style="margin-top:18px;width:100%;justify-content:center">
-                Share a request
-              </button>
-              <p class="fine">Our prayer team reads every request, every morning.</p>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      {/* ======================= THE WALL ======================= */}
+      {/* ======================= FORM + WALL, SIDE BY SIDE ======================= */}
       <section class="wall reveal">
-        <div class="wrap">
-          <div class="sec-head center">
-            <span class="kicker" style="justify-content:center">
-              All Are Welcome Here
-            </span>
-            <h2>Prayer Requests &amp; Praise Reports.</h2>
+        <div class="wrap prayer-split">
+          <div class="prayer-form-col">
+            <div class="pane warm" style="padding:38px 36px">
+              <span class="kicker">Add your prayer</span>
+              <h2>What's on your heart this week?</h2>
+              <form id="prayerGardenForm" style="margin-top:8px">
+                <div class="field">
+                  <label for="pwName">Name (optional)</label>
+                  <input id="pwName" type="text" placeholder="First name, or leave blank for Anonymous" />
+                </div>
+                <div class="field">
+                  <label for="pwMessage">Your request</label>
+                  <textarea id="pwMessage" rows={3} required placeholder="How can we pray for you this week?"></textarea>
+                </div>
+                <div class="field">
+                  <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
+                    <input type="checkbox" id="pwPublic" checked style="width:auto;margin-top:3px" />
+                    <span>Share this in the public garden (otherwise it goes directly and only to our prayer team)</span>
+                  </label>
+                </div>
+                <button class="btn btn-solid" type="submit" style="margin-top:18px;width:100%;justify-content:center">
+                  Share a request
+                </button>
+                <p class="fine">Our prayer team reads every request, every morning.</p>
+              </form>
+            </div>
           </div>
-          <div class="notes">
-            {prayers.map((p) => (
-              <div class="note">
-                <p>"{p.message}"</p>
-                <div class="who">— {p.name || 'Anonymous'}</div>
-                <div class="when">{timeAgo(p.created_at)}</div>
-              </div>
-            ))}
-            {prayers.length === 0 && (
-              <div class="note">
-                <p>"Be the first to share a prayer with us this week."</p>
-                <div class="who">— YANA Prayer Team</div>
-              </div>
-            )}
+          <div class="prayer-notes-col">
+            <div class="sec-head">
+              <span class="kicker">All Are Welcome Here</span>
+              <h2>Prayer Requests &amp; Praise Reports.</h2>
+            </div>
+            <div class="notes">
+              {prayers.map((p) => (
+                <div class="note">
+                  <p>"{p.message}"</p>
+                  <div class="who">— {p.name || 'Anonymous'}</div>
+                  <div class="when">{timeAgo(p.created_at)}</div>
+                </div>
+              ))}
+              {prayers.length === 0 && (
+                <div class="note">
+                  <p>"Be the first to share a prayer with us this week."</p>
+                  <div class="who">— YANA Prayer Team</div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
