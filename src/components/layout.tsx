@@ -212,7 +212,7 @@ export const Layout: FC<LayoutProps> = ({
                   YANA Ministries seeks to encourage, pray for, mentor, and teach others who are seeking to understand and fulfill the will of God in their lives.
                 </p>
               </div>
-              <div>
+              <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
                   {NAV_ITEMS.map((item) => (
