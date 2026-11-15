@@ -69,9 +69,9 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
         <div class="wrap">
           <div class="sec-head center">
             <span class="kicker" style="justify-content:center">
-              This week's garden
+              All Are Welcome Here
             </span>
-            <h2>{prayers.length} requests and counting.</h2>
+            <h2>Prayer Requests &amp; Praise Reports.</h2>
           </div>
           <div class="notes">
             {prayers.map((p) => (
