@@ -48,6 +48,15 @@ export const IMAGES = {
   resourcesBibleHighlighters: 'https://sspark.genspark.ai/i/ae53RbzpKuQzU3rs?width=2560', // hands on open Bible with highlighters, studying, GOOD
   resourcesOpenBibleMug: 'https://sspark.genspark.ai/i/p0S4BNNCoFuBNfyz?width=2560', // open Bible on wood table with mug in background, GOOD
 
+  // Ladies Retreat page (dedicated page gallery/testimonials)
+  retreatHeroFellowship: 'https://sspark.genspark.ai/i/QhtABYNna7uI4kTl?width=2560', // three women laughing together outdoors, warm sunlight, GOOD
+  retreatGalleryFriends: 'https://sspark.genspark.ai/i/G9rAeW7KCX2eNxjL?width=2560', // two young women sitting outdoors smiling, GOOD
+  retreatGalleryHikeDuo: 'https://sspark.genspark.ai/i/rrRSjYDXgRZNbnr7?width=2560', // two women hiking outdoors on grass, GOOD
+  retreatGalleryForestPath: 'https://sspark.genspark.ai/i/9ElVR44vMfTFdDn7?width=2560', // two walking a sunlit forest path from behind, GOOD
+  retreatGalleryGoldenField: 'https://sspark.genspark.ai/i/BST0YiiVyd6el6tJ?width=2560', // two women on rocks in tall golden grass, GOOD
+  retreatGalleryMountainView: 'https://sspark.genspark.ai/i/Ves6RrhLSnsUqRh9?width=2560', // three women on red rock mountain overlook, GOOD
+  retreatGalleryHandsCircle: 'https://sspark.genspark.ai/i/EK5gjxoNxdn5NUlf?width=2560', // overhead hands joined in a circle, prayer/unity, GOOD
+
   // Leadership — user-provided photos
   gildaTaylor: '/static/images/gilda-taylor-founder.jpg',
   boardRosalindYoder: '/static/images/board-rosalind-yoder.jpg',

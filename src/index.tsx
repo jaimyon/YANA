@@ -7,6 +7,7 @@ import { MinistriesPage } from './pages/ministries'
 import { ServicesPage } from './pages/services'
 import { ResourcesPage } from './pages/resources'
 import { PrayerGardenPage } from './pages/prayer-garden'
+import { LadiesRetreatPage } from './pages/ladies-retreat'
 import { AdminPage } from './pages/admin'
 import { sendPrayerRequestEmail } from './lib/email'
 
@@ -83,6 +84,18 @@ app.get('/resources', (c) => {
       path="/resources"
     >
       <ResourcesPage />
+    </Layout>
+  )
+})
+
+app.get('/ladies-retreat', (c) => {
+  return c.html(
+    <Layout
+      title="Annual Ladies Retreat — YANA"
+      description="Join YANA Ministries for our Annual Ladies Retreat, September 10–12, 2027 at Camp Allen in Navasota, Texas. See photos, read testimonials, and sign up."
+      path="/ladies-retreat"
+    >
+      <LadiesRetreatPage />
     </Layout>
   )
 })
@@ -293,6 +306,35 @@ app.post('/api/contact', async (c) => {
         })
       }
     }
+
+    return c.json({ ok: true })
+  } catch (e: any) {
+    return c.json({ ok: false, error: e?.message || 'Unknown error' }, 500)
+  }
+})
+
+app.post('/api/retreat-signup', async (c) => {
+  try {
+    const body = await c.req.json()
+    const name = (body.name || '').toString().trim().slice(0, 120)
+    const email = (body.email || '').toString().trim().slice(0, 200)
+    const phone = (body.phone || '').toString().trim().slice(0, 40) || null
+    const guestsNum = parseInt(body.guests, 10)
+    const guests = Number.isFinite(guestsNum) && guestsNum > 0 ? guestsNum : 1
+    const message = (body.message || '').toString().trim().slice(0, 1000) || null
+
+    if (!name) {
+      return c.json({ ok: false, error: 'Name is required.' }, 400)
+    }
+    if (!email) {
+      return c.json({ ok: false, error: 'Email is required.' }, 400)
+    }
+
+    await c.env.DB.prepare(
+      'INSERT INTO retreat_signups (name, email, phone, guests, message) VALUES (?, ?, ?, ?, ?)'
+    )
+      .bind(name, email, phone, guests, message)
+      .run()
 
     return c.json({ ok: true })
   } catch (e: any) {

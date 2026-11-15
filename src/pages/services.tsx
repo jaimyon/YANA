@@ -150,7 +150,7 @@ export function ServicesPage() {
               website, through email and postal mail, and on our social media pages. We look forward to
               welcoming you for another beautiful weekend of faith, fellowship, and spiritual renewal!
             </p>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/ladies-retreat">
               More Information
             </a>
           </div>

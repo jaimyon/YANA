@@ -215,6 +215,50 @@
     });
   }
 
+  // ---- ladies retreat page: sign-up form ----
+  var retreatForm = document.getElementById('retreatSignupForm');
+  if (retreatForm) {
+    retreatForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var submitBtn = document.getElementById('retreatSignupSubmit');
+      var original = submitBtn.textContent;
+      submitBtn.textContent = 'Signing up…';
+      submitBtn.disabled = true;
+
+      var payload = {
+        name: document.getElementById('rsName').value,
+        email: document.getElementById('rsEmail').value,
+        phone: document.getElementById('rsPhone').value,
+        guests: document.getElementById('rsGuests').value,
+        message: document.getElementById('rsMessage').value,
+      };
+
+      fetch('/api/retreat-signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function (r) {
+          return r.json().catch(function () { return {}; });
+        })
+        .then(function (data) {
+          if (data && data.ok) {
+            retreatForm.style.display = 'none';
+            document.getElementById('retreatSignupSuccess').classList.add('show');
+          } else {
+            alert((data && data.error) || 'Something went wrong. Please try again.');
+          }
+        })
+        .catch(function () {
+          alert('Something went wrong. Please try again.');
+        })
+        .finally(function () {
+          submitBtn.textContent = original;
+          submitBtn.disabled = false;
+        });
+    });
+  }
+
   // ---- shared footer: newsletter signup toggle + form ----
   var newsletterToggle = document.getElementById('newsletterToggle');
   var newsletterPanel = document.getElementById('newsletterPanel');
