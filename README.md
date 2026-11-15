@@ -9,7 +9,7 @@
   - Prayer requests submitted through either the Prayer Garden page or the shared contact form (when reason = prayer and "share on wall" is checked) are stored in Cloudflare D1 and shown publicly
   - Scrolling "Names of God" marquee, "Sundays at YANA" schedule, text-over-image sections (Unapologetically-Faithful-style), and a Shannon-Dvorak-style personal About page with fun facts and family photos
   - Services page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker) with a 4-up card grid linking down to matching detail sections on the same page
-  - Outside Resources page (A Right Relationship $15, Praying with God $5, Praise Be to God $5, plus an Other Suggestions list of general study tools) with the same 4-up card grid + detail-section pattern as Services
+  - Resources page (A Right Relationship $15, Praying with God $5, Praise Be to God $5, plus an Other Suggestions list of general study tools) with the same 4-up card grid + detail-section pattern as Services
   - "Sign Up For Newsletter" panel inside the shared footer contact form on every page — checkboxes for the weekly email newsletter and the monthly booklet, with a mailing address field that only appears (and becomes required) once the booklet checkbox is checked; signups are stored in Cloudflare D1
   - Licensed, vetted photography throughout (sourced via `image_search`, screened with `understand_images` to exclude AI/cartoon-looking results)
 
@@ -25,7 +25,7 @@
 | GET | `/ministries` | Ministries page (4-card grid, women's/men's ministry splits, serve CTA) |
 | GET | `/prayer-garden` | Prayer Garden page (submission form + full public wall) |
 | GET | `/services` | Services page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker) |
-| GET | `/resources` | Outside Resources page (A Right Relationship, Praying with God, Praise Be to God, Other Suggestions) |
+| GET | `/resources` | Resources page (A Right Relationship, Praying with God, Praise Be to God, Other Suggestions) |
 | POST | `/api/prayer-requests` | Body: `{ name?, message, is_public? }` → inserts into `prayer_requests` |
 | POST | `/api/contact` | Body: `{ name?, email?, reason, message?, share_on_wall? }` → inserts into `contact_messages`; if `reason === 'prayer'` and `share_on_wall` is true, also inserts into `prayer_requests` |
 | POST | `/api/newsletter` | Body: `{ name, email, wants_newsletter?, wants_booklet?, mailing_address? }` → inserts into `newsletter_signups`. Requires `name` and `email`; requires `mailing_address` when `wants_booklet` is true (enforced both client- and server-side) |
@@ -47,14 +47,14 @@
 - Below the contact form, click "Sign Up For Newsletter" to open the newsletter panel: check the weekly email newsletter and/or the monthly booklet, enter your name and email, and — if you checked the booklet — your mailing address (the field appears and becomes required automatically).
 - The Prayer Garden page itself has its own quick-add form plus the full list of shared requests.
 - The Services page's four cards jump down to their own detail sections on the same page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker).
-- The Outside Resources page's four cards do the same for A Right Relationship ($15), Praying with God ($5), Praise Be to God ($5), and Other Suggestions — a list of general study tools (concordance, study Bible, Bible dictionary, devotional journal). Ordering any book goes through the shared contact form.
+- The Resources page's four cards do the same for A Right Relationship ($15), Praying with God ($5), Praise Be to God ($5), and Other Suggestions — a list of general study tools (concordance, study Bible, Bible dictionary, devotional journal). Ordering any book goes through the shared contact form.
 
 ## Deployment
 - **Platform**: Cloudflare Pages (not yet deployed)
 - **Status**: ❌ Not yet deployed — built and verified locally only
 - **Tech Stack**: Hono + TypeScript (JSX) + Cloudflare D1 + vanilla CSS/JS, Vite build, Wrangler
 - **Before deploying**: the real Cloudflare D1 `database_id` must replace the placeholder `"local-dev-placeholder"` in `wrangler.jsonc`, and the user must choose a deploy path (their own Cloudflare account vs. Genspark-hosted) before any deploy is attempted.
-- **Last Updated**: 2026-11-15 (Outside Resources page added)
+- **Last Updated**: 2026-11-15 (Resources page added; nav/page renamed from "Outside Resources" to "Resources")
 
 ## Known Follow-ups
 - Mobile hamburger nav was added (`.navtoggle` button) — verify on-device once deployed.

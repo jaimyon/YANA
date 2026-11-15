@@ -78,7 +78,7 @@ app.get('/services', (c) => {
 app.get('/resources', (c) => {
   return c.html(
     <Layout
-      title="Outside Resources — YANA"
+      title="Resources — YANA"
       description="Books and resources from YANA Ministries — A Right Relationship, Praying with God, Praise Be to God — plus other tools to help you keep growing in your faith."
       path="/resources"
     >

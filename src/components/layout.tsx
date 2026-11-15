@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { href: '/about', label: 'About' },
   { href: '/prayer-garden', label: 'Prayer Garden' },
   { href: '/services', label: 'Services' },
-  { href: '/resources', label: 'Outside Resources' },
+  { href: '/resources', label: 'Resources' },
   { href: '#connect', label: 'Contact Us' },
 ]
 

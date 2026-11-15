@@ -10,7 +10,7 @@ export function ResourcesPage() {
           <span class="kicker" style="justify-content:center">
             Keep growing between Sundays
           </span>
-          <h1>Outside Resources.</h1>
+          <h1>Resources.</h1>
           <p class="lede center" style="margin-left:auto;margin-right:auto">
             Books, prayers, and tools written by YANA — plus a few trusted resources from
             others — to help you keep digging into God's Word long after you close this page.
