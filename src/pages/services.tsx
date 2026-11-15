@@ -35,7 +35,7 @@ export function ServicesPage() {
               <p>[Placeholder] For those who enjoy a printed, day-by-day booklet, YANA is happy to mail one directly to your home each month — no inbox required, just a quiet moment with the Word.</p>
               <span class="link">Request the booklet →</span>
             </a>
-            <a class="ccard" href="#connect" data-set-reason="question" style="text-decoration:none">
+            <a class="ccard" href="#retreat" style="text-decoration:none">
               <span class="idx">03</span>
               <h3>Annual Ladies Retreat</h3>
               <p>[Placeholder] Each year we invite women to step away from the busyness of everyday life and gather for a weekend of spiritual renewal, honest conversation, and rest.</p>
@@ -126,6 +126,36 @@ export function ServicesPage() {
               long after the weekend ends.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ======================= ANNUAL LADIES RETREAT ======================= */}
+      <section class="reveal" id="retreat">
+        <div class="wrap split">
+          <div>
+            <span class="kicker">Annual ladies retreat</span>
+            <h2>Step away for a weekend. Come back renewed.</h2>
+            <p style="margin-top:20px;color:var(--cocoa-soft)">
+              [Placeholder] Once a year, we gather women of every age and season of life for a
+              weekend away from the noise — worship that isn't rushed, conversations that go
+              deeper than small talk, and plenty of time to simply rest in God's presence.
+            </p>
+            <ul class="softlist">
+              <li>One weekend, once a year — all ages welcome</li>
+              <li>Worship, teaching, and small-group time</li>
+              <li>Scholarships available, no one is turned away</li>
+            </ul>
+            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+              Learn about the retreat
+            </a>
+          </div>
+          <figure class="shot" style="margin:0">
+            <img src={IMAGES.servicesRetreatRest} alt="Two women relaxing and talking together outdoors" />
+            <div class="badge">
+              <b>Yearly</b>
+              <span>Ladies retreat</span>
+            </div>
+          </figure>
         </div>
       </section>
 
