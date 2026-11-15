@@ -57,12 +57,12 @@ export const Layout: FC<LayoutProps> = ({
                   {item.label}
                 </a>
               ))}
-              <a class="btn btn-solid navlinks-cta" href="#connect">
-                Plan a visit
+              <a class="btn btn-solid navlinks-cta" href="#connect" data-set-reason="give">
+                Donate
               </a>
             </nav>
-            <a class="btn btn-solid navbar-cta" href="#connect">
-              Plan a visit
+            <a class="btn btn-solid navbar-cta" href="#connect" data-set-reason="give">
+              Donate
             </a>
             <button class="navtoggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
               ☰
