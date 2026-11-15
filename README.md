@@ -10,6 +10,7 @@
   - Scrolling "Names of God" marquee, "Sundays at YANA" schedule, text-over-image sections (Unapologetically-Faithful-style), and a Shannon-Dvorak-style personal About page with fun facts and family photos
   - Services page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker) with a 4-up card grid linking down to matching detail sections on the same page
   - Resources page (A Right Relationship $15, Praying with God $5, Praise Be to God $5, plus an Other Suggestions list of general study tools) with the same 4-up card grid + detail-section pattern as Services
+  - Dedicated Annual Ladies Retreat page (`/ladies-retreat`) with a photo gallery, guest testimonials, and its own sign-up form (stored in Cloudflare D1); the Services page's retreat "More Information" button links directly to it
   - "Sign Up For Newsletter" panel inside the shared footer contact form on every page — checkboxes for the weekly email newsletter and the monthly booklet, with a mailing address field that only appears (and becomes required) once the booklet checkbox is checked; signups are stored in Cloudflare D1
   - Licensed, vetted photography throughout (sourced via `image_search`, screened with `understand_images` to exclude AI/cartoon-looking results)
 
@@ -26,9 +27,11 @@
 | GET | `/prayer-garden` | Prayer Garden page (submission form + full public wall) |
 | GET | `/services` | Services page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker) |
 | GET | `/resources` | Resources page (A Right Relationship, Praying with God, Praise Be to God, Other Suggestions) |
+| GET | `/ladies-retreat` | Dedicated Annual Ladies Retreat page (intro, picture gallery, testimonials, sign-up form) |
 | POST | `/api/prayer-requests` | Body: `{ name?, message, is_public? }` → inserts into `prayer_requests` |
 | POST | `/api/contact` | Body: `{ name?, email?, reason, message?, share_on_wall? }` → inserts into `contact_messages`; if `reason === 'prayer'` and `share_on_wall` is true, also inserts into `prayer_requests` |
 | POST | `/api/newsletter` | Body: `{ name, email, wants_newsletter?, wants_booklet?, mailing_address? }` → inserts into `newsletter_signups`. Requires `name` and `email`; requires `mailing_address` when `wants_booklet` is true (enforced both client- and server-side) |
+| POST | `/api/retreat-signup` | Body: `{ name, email, phone?, guests?, message? }` → inserts into `retreat_signups`. Requires `name` and `email` |
 
 ## Data Architecture
 - **Storage**: Cloudflare D1 (SQLite), binding name `DB`, database name `webapp-production`
@@ -36,7 +39,8 @@
   - `prayer_requests(id, name, message, is_public, status, created_at)`
   - `contact_messages(id, name, email, reason, message, created_at)`
   - `newsletter_signups(id, name, email, wants_newsletter, wants_booklet, mailing_address, created_at)`
-- **Migrations**: `migrations/0001_initial.sql`, `0002_add_status.sql`, `0003_add_newsletter_signups.sql` (applied locally via `wrangler d1 migrations apply webapp-production --local`)
+  - `retreat_signups(id, name, email, phone, guests, message, created_at)`
+- **Migrations**: `migrations/0001_initial.sql`, `0002_add_status.sql`, `0003_add_newsletter_signups.sql`, `0004_add_retreat_signups.sql` (applied locally via `wrangler d1 migrations apply webapp-production --local`)
 - **Seed data**: `seed.sql` (8 sample prayer requests for local demo)
 
 ## User Guide
@@ -48,6 +52,7 @@
 - The Prayer Garden page itself has its own quick-add form plus the full list of shared requests.
 - The Services page's four cards jump down to their own detail sections on the same page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker).
 - The Resources page's four cards do the same for A Right Relationship ($15), Praying with God ($5), Praise Be to God ($5), and Other Suggestions — a list of general study tools (concordance, study Bible, Bible dictionary, devotional journal). Ordering any book goes through the shared contact form.
+- On the Services page, the Annual Ladies Retreat section's "More Information" button goes straight to `/ladies-retreat` — a dedicated page with a photo gallery, guest testimonials, and its own sign-up form for September 10–12, 2027 at Camp Allen.
 
 ## Deployment
 - **Platform**: Cloudflare Pages (not yet deployed)
