@@ -46,7 +46,7 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= THREE STEPS ======================= */}
+      {/* ======================= SERVICES ======================= */}
       <section class="reveal">
         <div class="wrap">
           <div class="sec-head center">
@@ -92,11 +92,9 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         <div class="wrap">
           <div class="caption">
             <span class="kicker">Life together</span>
-            <h2>Church isn't just Sunday. It's who shows up on Tuesday too.</h2>
+            <h2>We're here with you, through it all...</h2>
             <p>
-              The quiet mornings count just as much as the gathered ones — a text when you're
-              struggling, a meal when you're grieving, a friend who sits with you in the silence
-              before the words come.
+              Whether praising God for His many Blessings, or praying for His peace, mercy, and grace; we are here, by your side through it all. God's Love will never fail you and You Are Not Alone.
             </p>
           </div>
         </div>
@@ -111,8 +109,8 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             </span>
             <h2>Say it here. We'll carry it with you.</h2>
             <p class="lede" style="margin:16px auto 0">
-              These are real requests from our church family this week. Add yours — our prayer
-              team reads every one, every morning.
+              These are real requests from our members. Add yours — our Prayer
+              Team reads every one, every morning.
             </p>
           </div>
           <div class="notes">
