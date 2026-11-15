@@ -109,8 +109,8 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             </span>
             <h2>Say it here. We'll carry it with you.</h2>
             <p class="lede" style="margin:16px auto 0">
-              These are real requests from our members. Add yours — our Prayer
-              Team reads every one, every morning.
+              These are real requests. Our Prayer
+              Team reads every one, every morning. Join us in praying for them and add yours when you're in need so we can pray for you as well.
             </p>
           </div>
           <div class="notes">
