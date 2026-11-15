@@ -194,8 +194,13 @@
       })
         .then(function (r) { return r.json(); })
         .then(function (data) {
+          var statusEl = document.getElementById('pwStatus');
           if (data && data.ok) {
-            window.location.reload();
+            prayerForm.reset();
+            if (statusEl) {
+              statusEl.textContent = 'Thank you — your request was sent to our prayer team and will appear here once approved.';
+              statusEl.style.display = 'block';
+            }
           } else {
             alert('Something went wrong. Please try again.');
           }

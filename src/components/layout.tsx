@@ -235,6 +235,7 @@ export const Layout: FC<LayoutProps> = ({
         </footer>
 
         <script src="/static/app.js"></script>
+        {path === '/admin' && <script src="/static/admin.js"></script>}
       </body>
     </html>
   )

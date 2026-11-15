@@ -59,7 +59,8 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
                 <button class="btn btn-solid" type="submit" style="margin-top:18px;width:100%;justify-content:center">
                   Share a request
                 </button>
-                <p class="fine">Our prayer team reads every request, every morning.</p>
+                <p class="fine">Our prayer team reads every request, every morning, and approves it before it appears here.</p>
+                <p class="fine" id="pwStatus" style="display:none"></p>
               </form>
             </div>
           </div>
