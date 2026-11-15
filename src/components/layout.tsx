@@ -191,6 +191,83 @@ export const Layout: FC<LayoutProps> = ({
                   Someone from our team will be in touch soon. You are not alone.
                 </p>
               </div>
+
+              <button
+                type="button"
+                id="newsletterToggle"
+                class="btn btn-ghost"
+                style="margin-top:22px;width:100%;justify-content:center;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.25);color:#F0E3CE"
+                aria-expanded="false"
+                aria-controls="newsletterPanel"
+              >
+                📬 Sign Up For Newsletter
+              </button>
+
+              <div id="newsletterPanel" style="display:none;margin-top:18px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)">
+                <form id="newsletterForm">
+                  <label
+                    style="font-size:11.2px;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:#C7AF95;display:block;margin-bottom:10px"
+                  >
+                    I'd like to receive...
+                  </label>
+
+                  <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer;margin-bottom:10px">
+                    <input
+                      type="checkbox"
+                      id="wantsNewsletter"
+                      name="wants_newsletter"
+                      checked
+                      style="width:auto;margin-top:3px"
+                    />
+                    <span>The weekly email newsletter — a short note in your inbox.</span>
+                  </label>
+                  <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
+                    <input
+                      type="checkbox"
+                      id="wantsBooklet"
+                      name="wants_booklet"
+                      style="width:auto;margin-top:3px"
+                    />
+                    <span>The Monthly Messages Booklet, mailed to my home.</span>
+                  </label>
+
+                  <div class="field">
+                    <label for="nname">Name</label>
+                    <input id="nname" name="name" type="text" placeholder="Your name" required />
+                  </div>
+                  <div class="field">
+                    <label for="nemail">Email</label>
+                    <input id="nemail" name="email" type="email" placeholder="you@email.com" required />
+                  </div>
+                  <div class="field" id="mailingAddressField" style="display:none">
+                    <label for="naddress">Mailing address</label>
+                    <textarea
+                      id="naddress"
+                      name="mailing_address"
+                      rows={2}
+                      placeholder="Street, city, state, ZIP"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    class="btn btn-solid"
+                    type="submit"
+                    id="newsletterSubmit"
+                    style="margin-top:16px;width:100%;justify-content:center"
+                  >
+                    Sign me up
+                  </button>
+                  <p class="fine">We'll never share your info. Unsubscribe anytime.</p>
+                </form>
+
+                <div class="form-success" id="newsletterSuccess">
+                  <div class="icon">📬</div>
+                  <h3 style="color:#fff">You're on the list!</h3>
+                  <p style="color:#D9C3AA;margin-top:8px">
+                    Thanks for signing up — you are not alone.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -215,6 +215,77 @@
     });
   }
 
+  // ---- shared footer: newsletter signup toggle + form ----
+  var newsletterToggle = document.getElementById('newsletterToggle');
+  var newsletterPanel = document.getElementById('newsletterPanel');
+  if (newsletterToggle && newsletterPanel) {
+    newsletterToggle.addEventListener('click', function () {
+      var open = newsletterPanel.style.display !== 'none';
+      newsletterPanel.style.display = open ? 'none' : 'block';
+      newsletterToggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  }
+
+  var wantsBooklet = document.getElementById('wantsBooklet');
+  var mailingAddressField = document.getElementById('mailingAddressField');
+  var mailingAddressInput = document.getElementById('naddress');
+  if (wantsBooklet && mailingAddressField && mailingAddressInput) {
+    var syncAddressField = function () {
+      var show = wantsBooklet.checked;
+      mailingAddressField.style.display = show ? 'block' : 'none';
+      if (show) {
+        mailingAddressInput.setAttribute('required', 'required');
+      } else {
+        mailingAddressInput.removeAttribute('required');
+      }
+    };
+    syncAddressField();
+    wantsBooklet.addEventListener('change', syncAddressField);
+  }
+
+  var newsletterForm = document.getElementById('newsletterForm');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var submitBtn = document.getElementById('newsletterSubmit');
+      var original = submitBtn.textContent;
+      submitBtn.textContent = 'Signing up…';
+      submitBtn.disabled = true;
+
+      var payload = {
+        name: document.getElementById('nname').value,
+        email: document.getElementById('nemail').value,
+        wants_newsletter: document.getElementById('wantsNewsletter').checked,
+        wants_booklet: wantsBooklet ? wantsBooklet.checked : false,
+        mailing_address: mailingAddressInput ? mailingAddressInput.value : '',
+      };
+
+      fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function (r) {
+          return r.json().catch(function () { return {}; });
+        })
+        .then(function (data) {
+          if (data && data.ok) {
+            newsletterForm.style.display = 'none';
+            document.getElementById('newsletterSuccess').classList.add('show');
+          } else {
+            alert((data && data.error) || 'Something went wrong. Please try again.');
+          }
+        })
+        .catch(function () {
+          alert('Something went wrong. Please try again.');
+        })
+        .finally(function () {
+          submitBtn.textContent = original;
+          submitBtn.disabled = false;
+        });
+    });
+  }
+
   // ---- about page: leadership tabs (Founder / Board of Directors) ----
   var leaderTabs = document.getElementById('leaderTabs');
   if (leaderTabs) {

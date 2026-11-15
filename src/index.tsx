@@ -287,4 +287,38 @@ app.post('/api/contact', async (c) => {
   }
 })
 
+app.post('/api/newsletter', async (c) => {
+  try {
+    const body = await c.req.json()
+    const name = (body.name || '').toString().trim().slice(0, 120)
+    const email = (body.email || '').toString().trim().slice(0, 200)
+    const wantsNewsletter = !!body.wants_newsletter
+    const wantsBooklet = !!body.wants_booklet
+    const mailingAddress = (body.mailing_address || '').toString().trim().slice(0, 500) || null
+
+    if (!name) {
+      return c.json({ ok: false, error: 'Name is required.' }, 400)
+    }
+    if (!email) {
+      return c.json({ ok: false, error: 'Email is required.' }, 400)
+    }
+    if (wantsBooklet && !mailingAddress) {
+      return c.json(
+        { ok: false, error: 'Mailing address is required to receive the monthly booklet.' },
+        400
+      )
+    }
+
+    await c.env.DB.prepare(
+      'INSERT INTO newsletter_signups (name, email, wants_newsletter, wants_booklet, mailing_address) VALUES (?, ?, ?, ?, ?)'
+    )
+      .bind(name, email, wantsNewsletter ? 1 : 0, wantsBooklet ? 1 : 0, mailingAddress)
+      .run()
+
+    return c.json({ ok: true })
+  } catch (e: any) {
+    return c.json({ ok: false, error: e?.message || 'Unknown error' }, 500)
+  }
+})
+
 export default app
