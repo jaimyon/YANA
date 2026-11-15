@@ -11,8 +11,10 @@ type LayoutProps = {
 const NAV_ITEMS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/ministries', label: 'Ministries' },
-  { href: '/prayer-wall', label: 'Prayer Wall' },
+    { href: '/prayer-garden', label: 'Prayer Garden' },
+  { href: '/services', label: 'Services' },
+  { href: '/resources', label: 'Outside Resources' },
+  { href: '/contact', label: 'Contact Us' },
 ]
 
 export const Layout: FC<LayoutProps> = ({
