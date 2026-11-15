@@ -68,12 +68,12 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
               <p>For those who enjoy a printed, day-by-day booklet, YANA is happy to mail one directly to your home each month...</p>
               <span class="arrow">→</span>
             </div>
-            <div class="step">
+            <a class="step" href="/prayer-garden">
               <span class="num">Prayer Garden</span>
               <h3>We all need prayer!</h3>
               <p>Send us your prayer requests and praise reports then join with us as we pray with one another for one another...</p>
               <span class="arrow">→</span>
-            </div>
+            </a>
             <div class="step">
               <span class="num">Annual Ladies Retreat</span>
               <h3>A powerful weekend of renewal!</h3>
