@@ -213,47 +213,15 @@ export const Layout: FC<LayoutProps> = ({
                 </p>
               </div>
               <div>
-                <h4>Visit</h4>
+                <h4>Menu</h4>
                 <ul>
-                  <li>[Street Address]</li>
-                  <li>[Your City, State ZIP]</li>
-                  <li>Sundays 9:00 &amp; 11:00 AM</li>
+                  {NAV_ITEMS.map((item) => (
+                    <li>
+                      <a href={item.href}>{item.label}</a>
+                    </li>
+                  ))}
                   <li>
-                    <a href="tel:">[Phone number]</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4>Connect</h4>
-                <ul>
-                  <li>
-                    <a href="/about">New here</a>
-                  </li>
-                  <li>
-                    <a href="/ministries">Small groups</a>
-                  </li>
-                  <li>
-                    <a href="/prayer-wall">Prayer wall</a>
-                  </li>
-                  <li>
-                    <a href="/ministries">Serve</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4>More</h4>
-                <ul>
-                  <li>
-                    <a href="#connect">Give</a>
-                  </li>
-                  <li>
-                    <a href="/about">Messages</a>
-                  </li>
-                  <li>
-                    <a href="#connect">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#">Instagram</a>
+                    <a href="#connect">Plan a visit</a>
                   </li>
                 </ul>
               </div>
