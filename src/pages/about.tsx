@@ -8,14 +8,13 @@ export function AboutPage() {
         <div class="glow"></div>
         <div class="wrap">
           <span class="kicker" style="justify-content:center">
-            Nice to meet you
+            Those who are called... serve.
           </span>
           <h1>
-            I'm so glad <span class="em">you're here.</span>
+            A Team Assembled By <span class="em">God!</span>
           </h1>
           <p class="lede center" style="margin-left:auto;margin-right:auto">
-            This page is a small glimpse into who we are, what God has done in this community,
-            and why YANA exists the way it does.
+            Each and every person involved in YANA Ministries has a heart to do Christ's work and share God's Word and spread His Love to as many people as humanly possible. Surrounded by His Presence. Filled with His Spirit. Covered by His Grace.
           </p>
         </div>
       </section>
