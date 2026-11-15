@@ -10,7 +10,7 @@ export function ServicesPage() {
           <span class="kicker" style="justify-content:center">
             Ways we walk with you
           </span>
-          <h1>Our Services.</h1>
+          <h1>Our Services</h1>
           <p class="lede center" style="margin-left:auto;margin-right:auto">
             From a daily word in your inbox to a weekend away with other women seeking
             God, these are the ways YANA shows up for you, week after week, season after
@@ -136,15 +136,20 @@ export function ServicesPage() {
             <span class="kicker">Annual ladies retreat</span>
             <h2>Step away for a weekend. Come back renewed.</h2>
             <p style="margin-top:20px;color:var(--cocoa-soft)">
-              [Placeholder] Once a year, we gather women of every age and season of life for a
-              weekend away from the noise — worship that isn't rushed, conversations that go
-              deeper than small talk, and plenty of time to simply rest in God's presence.
+              Each year, YANA Ministries invites women to step away from the busyness of everyday life and
+              gather for a weekend of spiritual renewal, meaningful connection, and joyful fellowship. Our
+              annual Ladies Retreat is a special time to rest in God’s presence, deepen our relationship
+              with Him, and build lasting friendships with our sisters in Christ. Through heartfelt worship,
+              inspiring biblical teaching, prayer, and encouragement, we create space for God to refresh our
+              hearts and strengthen our faith. Past retreat themes have included: Joy, Be Transformed, LORD!
+              I Need You, and I Am the One Your Heart Loves.
             </p>
-            <ul class="softlist">
-              <li>One weekend, once a year — all ages welcome</li>
-              <li>Worship, teaching, and small-group time</li>
-              <li>Scholarships available, no one is turned away</li>
-            </ul>
+            <p style="color:var(--cocoa-soft)">
+              Our next Ladies Retreat will be held September 10–12, 2027, at Camp Allen in Navasota, Texas.
+              Details regarding the retreat theme, registration, cost, and payment will be shared on our
+              website, through email and postal mail, and on our social media pages. We look forward to
+              welcoming you for another beautiful weekend of faith, fellowship, and spiritual renewal!
+            </p>
             <a class="btn btn-ghost" href="#connect" data-set-reason="question">
               Learn about the retreat
             </a>
@@ -163,12 +168,14 @@ export function ServicesPage() {
       <section class="reveal" id="speaker">
         <div class="wrap split">
           <div>
-            <span class="kicker">Event speaker</span>
+            <span class="kicker">Event Speaker</span>
             <h2>Bring a message of hope to your next gathering.</h2>
             <p style="margin-top:20px;color:var(--cocoa-soft)">
-              [Placeholder] Whether it's a Sunday service, a women's conference, a retreat, or a
-              community event, our founder and ministry team are honored to share testimony,
-              teaching, and encouragement rooted in Scripture and lived experience.
+              Gilda Taylor is available to speak at and lead a variety of conferences, gatherings, and
+              meetings, sharing biblical encouragement and insights to inspire and strengthen others in
+              their walk with the Lord. Past presentations have included Quest for the Virtuous Woman,
+              Women of the Bible, Date With The King (designed especially for teen girls), and The Lord’s
+              Prayer.
             </p>
             <ul class="softlist">
               <li>Church services, conferences &amp; retreats</li>
