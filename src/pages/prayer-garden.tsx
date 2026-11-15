@@ -26,10 +26,10 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
           <span class="kicker" style="justify-content:center">
             The prayer garden
           </span>
-          <h1>Say it here. We'll carry it with you.</h1>
+          <h1>Share it here. We'll carry it together.</h1>
           <p class="lede center" style="margin-left:auto;margin-right:auto">
-            These are real requests from our church family. Add yours — our prayer team reads
-            every single one, every morning, before the day gets away from them.
+            These are real requests. Add yours and say a prayer or lift some praise for someone else. Please know that our prayer team reads
+            every single one, every morning.
           </p>
         </div>
       </section>
