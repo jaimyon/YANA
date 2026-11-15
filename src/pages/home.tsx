@@ -91,10 +91,10 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
       >
         <div class="wrap">
           <div class="caption">
-            <span class="kicker">Life together</span>
+            <span class="kicker">Faith Over Fear</span>
             <h2>We're here with you, through it all...</h2>
             <p>
-              Whether praising God for His many Blessings, or praying for His peace, mercy, and grace; we are here, by your side through it all. God's Love will never fail you and You Are Not Alone.
+              Whether praising God for His many Blessings, or praying for His peace, mercy, and grace; we are here, by your side, through it all. Your faith will sustain you and God's Love will never fail you. You Are Not Alone.
             </p>
           </div>
         </div>
