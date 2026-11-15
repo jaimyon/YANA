@@ -5,6 +5,7 @@ import { HomePage } from './pages/home'
 import { AboutPage } from './pages/about'
 import { MinistriesPage } from './pages/ministries'
 import { ServicesPage } from './pages/services'
+import { ResourcesPage } from './pages/resources'
 import { PrayerGardenPage } from './pages/prayer-garden'
 import { AdminPage } from './pages/admin'
 import { sendPrayerRequestEmail } from './lib/email'
@@ -70,6 +71,18 @@ app.get('/services', (c) => {
       path="/services"
     >
       <ServicesPage />
+    </Layout>
+  )
+})
+
+app.get('/resources', (c) => {
+  return c.html(
+    <Layout
+      title="Outside Resources — YANA"
+      description="Books and resources from YANA Ministries — A Right Relationship, Praying with God, Praise Be to God — plus other tools to help you keep growing in your faith."
+      path="/resources"
+    >
+      <ResourcesPage />
     </Layout>
   )
 })

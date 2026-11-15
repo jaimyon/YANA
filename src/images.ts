@@ -43,6 +43,11 @@ export const IMAGES = {
   servicesRetreatRest: 'https://sspark.genspark.ai/i/XjmGgyDQihqnJMVK?width=2560', // two women relaxing together on a patio, GOOD
   servicesSpeaker: 'https://sspark.genspark.ai/i/6qUb4tcsGfZF9JYR?width=2560', // speaker at podium addressing audience, GOOD
 
+  // Outside Resources page
+  resourcesStudyBooks: 'https://sspark.genspark.ai/i/KbSgRUZju9WnJ0Su?width=2560', // tall stack of Christian study/reference books on table, GOOD — parallax
+  resourcesBibleHighlighters: 'https://sspark.genspark.ai/i/ae53RbzpKuQzU3rs?width=2560', // hands on open Bible with highlighters, studying, GOOD
+  resourcesOpenBibleMug: 'https://sspark.genspark.ai/i/p0S4BNNCoFuBNfyz?width=2560', // open Bible on wood table with mug in background, GOOD
+
   // Leadership — user-provided photos
   gildaTaylor: '/static/images/gilda-taylor-founder.jpg',
   boardRosalindYoder: '/static/images/board-rosalind-yoder.jpg',
