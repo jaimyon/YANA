@@ -80,25 +80,33 @@ export function AboutPage() {
             </div>
             <div class="board-grid">
               <div class="board-card">
-                <div class="board-avatar">GT</div>
+                <div class="board-avatar">
+                  <img src={IMAGES.boardRosalindYoder} alt="Rosalind Yoder" style="object-position:65% 25%" />
+                </div>
                 <h3>Rosalind Yoder</h3>
                 <span class="board-role">Board Chair</span>
                 <p>[Placeholder] Serving YANA Ministries since its founding, guiding vision and strategy.</p>
               </div>
               <div class="board-card">
-                <div class="board-avatar">JD</div>
+                <div class="board-avatar">
+                  <img src={IMAGES.boardTyanParkerDominguez} alt="Tyan Arii Parker-Dominguez" style="object-position:50% 35%" />
+                </div>
                 <h3>Tyan Arii Parker-Dominguez</h3>
                 <span class="board-role">Vice Chair</span>
                 <p>[Placeholder] Brings years of nonprofit leadership experience to the board.</p>
               </div>
               <div class="board-card">
-                <div class="board-avatar">MS</div>
+                <div class="board-avatar">
+                  <img src={IMAGES.boardTzanParker} alt="Tzan Arii Parker" style="object-position:50% 30%" />
+                </div>
                 <h3>Tzan Arii Parker</h3>
                 <span class="board-role">Treasurer</span>
                 <p>[Placeholder] Oversees financial stewardship and accountability for the ministry.</p>
               </div>
               <div class="board-card">
-                <div class="board-avatar">AR</div>
+                <div class="board-avatar">
+                  <img src={IMAGES.boardTvanSimmons} alt="Tvan Simmons" style="object-position:47% 25%" />
+                </div>
                 <h3>Tvan Simmons</h3>
                 <span class="board-role">Secretary</span>
                 <p>[Placeholder] Keeps the board organized and connected to the wider congregation.</p>

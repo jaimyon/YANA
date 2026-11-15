@@ -38,4 +38,8 @@ export const IMAGES = {
 
   // Leadership — user-provided photos
   gildaTaylor: '/static/images/gilda-taylor-founder.jpg',
+  boardRosalindYoder: '/static/images/board-rosalind-yoder.jpg',
+  boardTyanParkerDominguez: '/static/images/board-tyan-parker-dominguez.jpg',
+  boardTzanParker: '/static/images/board-tzan-parker.jpg',
+  boardTvanSimmons: '/static/images/board-tvan-simmons.jpg',
 }
