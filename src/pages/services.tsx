@@ -10,7 +10,7 @@ export function ServicesPage() {
           <span class="kicker" style="justify-content:center">
             Ways we walk with you
           </span>
-          <h1>Popular Services.</h1>
+          <h1>Our Services.</h1>
           <p class="lede center" style="margin-left:auto;margin-right:auto">
             From a daily word in your inbox to a weekend away with other women seeking
             God, these are the ways YANA shows up for you, week after week, season after
