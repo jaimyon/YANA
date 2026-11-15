@@ -91,7 +91,7 @@ export function AboutPage() {
                 <div class="board-avatar">
                   <img src={IMAGES.boardTyanParkerDominguez} alt="Tyan Arii Parker-Dominguez" style="object-position:50% 35%" />
                 </div>
-                <h3>Tyan Arii Parker-Dominguez</h3>
+                <h3>Tyan Parker-Dominguez</h3>
                 <span class="board-role">Vice Chair</span>
                 <p>[Placeholder] Brings years of nonprofit leadership experience to the board.</p>
               </div>
@@ -99,7 +99,7 @@ export function AboutPage() {
                 <div class="board-avatar">
                   <img src={IMAGES.boardTzanParker} alt="Tzan Arii Parker" style="object-position:50% 30%" />
                 </div>
-                <h3>Tzan Arii Parker</h3>
+                <h3>Tzan Parker</h3>
                 <span class="board-role">Treasurer</span>
                 <p>[Placeholder] Oversees financial stewardship and accountability for the ministry.</p>
               </div>
@@ -123,7 +123,7 @@ export function AboutPage() {
       >
         <div class="wrap">
           <div class="caption">
-            <span class="kicker">Our hope for you</span>
+            <span class="kicker">We're all perfectly imperfect</span>
             <h2>You don't have to have it figured out to belong here.</h2>
           </div>
         </div>
