@@ -214,4 +214,26 @@
         });
     });
   }
+
+  // ---- about page: leadership tabs (Founder / Board of Directors) ----
+  var leaderTabs = document.getElementById('leaderTabs');
+  if (leaderTabs) {
+    var tabButtons = leaderTabs.querySelectorAll('.leader-tab');
+    tabButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.getAttribute('data-tab');
+
+        tabButtons.forEach(function (b) {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+
+        document.querySelectorAll('.leader-panel').forEach(function (panel) {
+          var isMatch = panel.id === 'leader-' + target;
+          panel.style.display = isMatch ? '' : 'none';
+          panel.classList.toggle('active', isMatch);
+        });
+      });
+    });
+  }
 })();
