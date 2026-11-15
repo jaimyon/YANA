@@ -47,7 +47,7 @@ export function AboutPage() {
             <div class="about-top">
               <figure class="portrait" style="margin:0">
                 <div class="ring"></div>
-                <img src={IMAGES.aboutPortrait} alt="Gilda M. Taylor, Founder of YANA Ministries" />
+                <img src={IMAGES.gildaTaylor} alt="Gilda M. Taylor, Founder of YANA Ministries" />
               </figure>
               <div>
                 <span class="kicker">Our founder</span>

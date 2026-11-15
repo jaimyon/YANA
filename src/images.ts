@@ -35,4 +35,7 @@ export const IMAGES = {
   // About page (Shannon Dvorak-style) — placeholder warm portraits (replace w/ real staff photo later)
   aboutPortrait: 'https://sspark.genspark.ai/i/r9h03N8T4mB09mxi?width=1200',
   aboutCozyChair: 'https://sspark.genspark.ai/i/6GjOXcUPPhEiJoGl?width=1200',
+
+  // Leadership — user-provided photos
+  gildaTaylor: '/static/images/gilda-taylor-founder.jpg',
 }
