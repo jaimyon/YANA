@@ -207,8 +207,7 @@ export const Layout: FC<LayoutProps> = ({
                   </span>
                 </a>
                 <p class="fblurb">
-                  A church family in [Your City] — gathering on Sundays and scattered through
-                  the week to love our neighbours well.
+                  YANA Ministries seeks to encourage, pray for, mentor, and teach others who are seeking to understand and fulfill the will of God in their lives.
                 </p>
               </div>
               <div>
