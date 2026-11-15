@@ -4,6 +4,7 @@ import { Layout } from './components/layout'
 import { HomePage } from './pages/home'
 import { AboutPage } from './pages/about'
 import { MinistriesPage } from './pages/ministries'
+import { ServicesPage } from './pages/services'
 import { PrayerGardenPage } from './pages/prayer-garden'
 import { AdminPage } from './pages/admin'
 import { sendPrayerRequestEmail } from './lib/email'
@@ -57,6 +58,18 @@ app.get('/ministries', (c) => {
       path="/ministries"
     >
       <MinistriesPage />
+    </Layout>
+  )
+})
+
+app.get('/services', (c) => {
+  return c.html(
+    <Layout
+      title="Services — YANA"
+      description="Daily email devotionals, our monthly messages booklet, the annual ladies retreat, and event speaking — the ways YANA walks with you."
+      path="/services"
+    >
+      <ServicesPage />
     </Layout>
   )
 })

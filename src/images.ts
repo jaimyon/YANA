@@ -36,6 +36,12 @@ export const IMAGES = {
   aboutPortrait: 'https://sspark.genspark.ai/i/r9h03N8T4mB09mxi?width=1200',
   aboutCozyChair: 'https://sspark.genspark.ai/i/6GjOXcUPPhEiJoGl?width=1200',
 
+  // Services page
+  servicesDailyEmail: 'https://sspark.genspark.ai/i/Xfje5xi4CmIGFLML?width=2560', // "good morning" devotional coffee + book scene, GOOD
+  servicesBooklets: 'https://sspark.genspark.ai/i/pl9lomRDc0Lt0Si6?width=2560', // stack of notebooks/booklets on table, GOOD
+  servicesRetreat: 'https://sspark.genspark.ai/i/kYdn6fm6XcaTJE60?width=2560', // three women jumping joyfully outdoors, GOOD
+  servicesSpeaker: 'https://sspark.genspark.ai/i/6qUb4tcsGfZF9JYR?width=2560', // speaker at podium addressing audience, GOOD
+
   // Leadership — user-provided photos
   gildaTaylor: '/static/images/gilda-taylor-founder.jpg',
   boardRosalindYoder: '/static/images/board-rosalind-yoder.jpg',
