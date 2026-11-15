@@ -87,6 +87,20 @@ export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
+      {/* ======================= PRAYER GARDEN BLURB ======================= */}
+      <section class="reveal" style="padding-top:0">
+        <div class="wrap" style="max-width:760px">
+          <p class="lede center" style="margin-left:auto;margin-right:auto">
+            A fundamental part of being a follower of Christ is to pray for others so that
+            through His grace they will be drawn to Him. At YANA Ministries, we are honored to
+            pray with you for those you want to be touched by the mercy and grace of God. We are
+            also honored to rejoice with you at God's response to your request should you choose
+            to share that with us. Your praises and prayers will remain on this page for at
+            least 30 days.
+          </p>
+        </div>
+      </section>
+
       {/* ======================= PARALLAX BAND — when the prayer doesn't come easy ======================= */}
       <section
         class="parallax-band reveal"
