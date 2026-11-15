@@ -56,30 +56,30 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             <h2>POPULAR SERVICES.</h2>
           </div>
           <div class="steps">
-            <div class="step">
+            <a class="step" href="/services#daily-email">
               <span class="num">Daily Email Message</span>
               <h3>Daily encouragement in your inbox!</h3>
               <p>Sign up to receive a thoughtful and encouraging devotional message in your inbox each day to inspire your faith...</p>
               <span class="arrow">→</span>
-            </div>
-            <div class="step">
+            </a>
+            <a class="step" href="/services#booklet">
               <span class="num">Monthly Message Booklet</span>
               <h3>An invaluable resource mailed right to you!</h3>
               <p>For those who enjoy a printed, day-by-day booklet, YANA is happy to mail one directly to your home each month...</p>
               <span class="arrow">→</span>
-            </div>
+            </a>
             <a class="step" href="/prayer-garden">
               <span class="num">Prayer Garden</span>
               <h3>We all need prayer!</h3>
               <p>Send us your prayer requests and praise reports then join with us as we pray with one another for one another...</p>
               <span class="arrow">→</span>
             </a>
-            <div class="step">
+            <a class="step" href="/ladies-retreat">
               <span class="num">Annual Ladies Retreat</span>
               <h3>A powerful weekend of renewal!</h3>
               <p>Each year we invite women to step away from the busyness of everyday life and gather for a weekend of spiritual...</p>
               <span class="arrow">→</span>
-            </div>
+            </a>
           </div>
         </div>
       </section>
