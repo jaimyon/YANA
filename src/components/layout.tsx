@@ -11,7 +11,7 @@ type LayoutProps = {
 const NAV_ITEMS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-    { href: '/prayer-garden', label: 'Prayer Garden' },
+  { href: '/prayer-garden', label: 'Prayer Garden' },
   { href: '/services', label: 'Services' },
   { href: '/resources', label: 'Outside Resources' },
   { href: '/contact', label: 'Contact Us' },
@@ -167,8 +167,8 @@ export const Layout: FC<LayoutProps> = ({
                       />
                       <span>
                         Share this (anonymously, if you'd like) on our{' '}
-                        <a href="/prayer-wall" style="color:var(--sunflower);text-decoration:underline">
-                          Prayer Wall
+                        <a href="/prayer-garden" style="color:var(--sunflower);text-decoration:underline">
+                          Prayer Garden
                         </a>{' '}
                         — uncheck to keep it just between you and our prayer team.
                       </span>

@@ -17,14 +17,14 @@ function timeAgo(dateStr: string) {
   return 'A while ago'
 }
 
-export function PrayerWallPage({ prayers }: { prayers: PrayerRow[] }) {
+export function PrayerGardenPage({ prayers }: { prayers: PrayerRow[] }) {
   return (
     <>
       <section class="page-hero">
         <div class="glow"></div>
         <div class="wrap">
           <span class="kicker" style="justify-content:center">
-            The prayer wall
+            The prayer garden
           </span>
           <h1>Say it here. We'll carry it with you.</h1>
           <p class="lede center" style="margin-left:auto;margin-right:auto">
@@ -40,7 +40,7 @@ export function PrayerWallPage({ prayers }: { prayers: PrayerRow[] }) {
           <div class="pane warm" style="padding:38px 36px">
             <span class="kicker">Add your prayer</span>
             <h2>What's on your heart this week?</h2>
-            <form id="prayerWallForm" style="margin-top:8px">
+            <form id="prayerGardenForm" style="margin-top:8px">
               <div class="field">
                 <label for="pwName">Name (optional)</label>
                 <input id="pwName" type="text" placeholder="First name, or leave blank for Anonymous" />
@@ -52,7 +52,7 @@ export function PrayerWallPage({ prayers }: { prayers: PrayerRow[] }) {
               <div class="field">
                 <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
                   <input type="checkbox" id="pwPublic" checked style="width:auto;margin-top:3px" />
-                  <span>Share this on the public wall below (otherwise it goes directly and only to our prayer team)</span>
+                  <span>Share this in the public garden below (otherwise it goes directly and only to our prayer team)</span>
                 </label>
               </div>
               <button class="btn btn-solid" type="submit" style="margin-top:18px;width:100%;justify-content:center">
@@ -69,7 +69,7 @@ export function PrayerWallPage({ prayers }: { prayers: PrayerRow[] }) {
         <div class="wrap">
           <div class="sec-head center">
             <span class="kicker" style="justify-content:center">
-              This week's wall
+              This week's garden
             </span>
             <h2>{prayers.length} requests and counting.</h2>
           </div>

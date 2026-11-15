@@ -100,12 +100,12 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         </div>
       </section>
 
-      {/* ======================= PRAYER WALL PREVIEW ======================= */}
+      {/* ======================= PRAYER GARDEN PREVIEW ======================= */}
       <section class="wall reveal">
         <div class="wrap">
           <div class="sec-head center">
             <span class="kicker" style="justify-content:center">
-              The prayer wall
+              The prayer garden
             </span>
             <h2>Say it here. We'll carry it with you.</h2>
             <p class="lede" style="margin:16px auto 0">
@@ -123,7 +123,7 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             <div class="note add">
               <b>Add your prayer</b>
               <span>Anonymous requests welcome</span>
-              <a class="btn btn-solid" href="/prayer-wall">
+              <a class="btn btn-solid" href="/prayer-garden">
                 Share a request
               </a>
             </div>

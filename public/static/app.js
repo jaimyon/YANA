@@ -171,8 +171,8 @@
     });
   }
 
-  // ---- prayer wall: add request modal/form (on prayer-wall page) ----
-  var prayerForm = document.getElementById('prayerWallForm');
+  // ---- prayer garden: add request modal/form (on prayer-garden page) ----
+  var prayerForm = document.getElementById('prayerGardenForm');
   if (prayerForm) {
     prayerForm.addEventListener('submit', function (e) {
       e.preventDefault();

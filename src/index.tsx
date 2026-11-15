@@ -3,7 +3,7 @@ import { Layout } from './components/layout'
 import { HomePage } from './pages/home'
 import { AboutPage } from './pages/about'
 import { MinistriesPage } from './pages/ministries'
-import { PrayerWallPage } from './pages/prayer-wall'
+import { PrayerGardenPage } from './pages/prayer-garden'
 
 type Bindings = {
   DB: D1Database
@@ -54,7 +54,7 @@ app.get('/ministries', (c) => {
   )
 })
 
-app.get('/prayer-wall', async (c) => {
+app.get('/prayer-garden', async (c) => {
   let prayers: any[] = []
   try {
     const { results } = await c.env.DB.prepare(
@@ -66,11 +66,11 @@ app.get('/prayer-wall', async (c) => {
   }
   return c.html(
     <Layout
-      title="Prayer Wall — YANA"
+      title="Prayer Garden — YANA"
       description="Share a prayer request with the YANA community. Our prayer team reads every request, every morning."
-      path="/prayer-wall"
+      path="/prayer-garden"
     >
-      <PrayerWallPage prayers={prayers as any} />
+      <PrayerGardenPage prayers={prayers as any} />
     </Layout>
   )
 })
