@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { href: '/prayer-garden', label: 'Prayer Garden' },
   { href: '/services', label: 'Services' },
   { href: '/resources', label: 'Outside Resources' },
-  { href: '/contact', label: 'Contact Us' },
+  { href: '#connect', label: 'Contact Us' },
 ]
 
 export const Layout: FC<LayoutProps> = ({
@@ -220,9 +220,6 @@ export const Layout: FC<LayoutProps> = ({
                       <a href={item.href}>{item.label}</a>
                     </li>
                   ))}
-                  <li>
-                    <a href="#connect">Plan a visit</a>
-                  </li>
                 </ul>
               </div>
             </div>
