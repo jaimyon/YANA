@@ -80,7 +80,7 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
               <p>Each year we invite women to step away from the busyness of everyday life and gather for a weekend of spiritual...</p>
               <span class="arrow">→</span>
             </a>
-            <a class="step" href="/speaker">
+            <a class="step" href="/services#speaker">
               <span class="num">Event Speaker</span>
               <h3>Bringing a Message of Hope!</h3>
               <p>Gilda Taylor shares biblical encouragement and insights to inspire and strengthen others in their walk with the Lord...</p>
