@@ -53,7 +53,7 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             <span class="kicker" style="justify-content:center">
               WE'RE SO GLAD YOU'RE HERE!
             </span>
-            <h2>POPULAR SERVICES.</h2>
+            <h2>OUR SERVICES</h2>
           </div>
           <div class="steps">
             <a class="step" href="/services#daily-email">
@@ -80,6 +80,12 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
               <p>Each year we invite women to step away from the busyness of everyday life and gather for a weekend of spiritual...</p>
               <span class="arrow">→</span>
             </a>
+            <a class="step" href="/speaker">
+              <span class="num">Event Speaker</span>
+              <h3>Bringing a Message of Hope!</h3>
+              <p>Gilda Taylor shares biblical encouragement and insights to inspire and strengthen others in their walk with the Lord...</p>
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
       </section>
@@ -92,9 +98,9 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
         <div class="wrap">
           <div class="caption">
             <span class="kicker">Faith Over Fear</span>
-            <h2>We're here with you, through it all...</h2>
+            <h2>You Are Not Alone</h2>
             <p>
-              Whether praising God for His many Blessings, or praying for His peace, mercy, and grace; we are here, by your side, through it all. Your faith will sustain you and God's Love will never fail you. You Are Not Alone.
+              Whether praising God for His many Blessings, or praying for His peace, mercy, and grace; we are here, by your side, through it all. Your faith will sustain you and God's Love will never fail you. We're here with you through it all.
             </p>
           </div>
         </div>
@@ -109,8 +115,7 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
             </span>
             <h2>Say it here. We'll carry it with you.</h2>
             <p class="lede" style="margin:16px auto 0">
-              These are real requests. Our Prayer
-              Team reads every one, every morning. Join us in praying for them and add yours when you're in need so we can pray for you as well.
+              Below are prayer requests we have received. Join us in praying for them and add yours when you're in need so we can pray for you as well.
             </p>
           </div>
           <div class="notes">
