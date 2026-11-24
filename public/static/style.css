@@ -90,8 +90,8 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(254,251,244,.88);bac
 header.nav.stuck{border-color:var(--line);box-shadow:0 10px 30px -26px rgba(74,54,40,.6)}
 .navbar{max-width:var(--maxw);margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:30px}
 .brand{display:flex;align-items:center;gap:12px;margin-right:auto}
-.brand .logo-wrap{width:48px;height:48px;border-radius:14px;overflow:hidden;box-shadow:0 8px 18px -8px rgba(74,54,40,.5);flex:none}
-.brand .logo-wrap img{width:100%;height:100%;object-fit:cover}
+.brand .logo-wrap{width:48px;height:48px;border-radius:50%;overflow:hidden;box-shadow:0 8px 18px -8px rgba(74,54,40,.5);flex:none;padding:3px;background:linear-gradient(145deg,var(--amber),var(--peach-deep))}
+.brand .logo-wrap img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:1.5px solid rgba(254,251,244,.9)}
 .brand b{font-family:var(--display);font-weight:400;font-size:1.5rem;letter-spacing:.04em;line-height:1}
 .brand small{display:block;font-family:var(--body);font-size:9.3px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--cocoa-soft);margin-top:4px}
 .navlinks{display:flex;gap:26px;font-size:14.2px;font-weight:600}
