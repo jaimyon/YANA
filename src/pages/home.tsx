@@ -20,7 +20,7 @@ export function HomePage({ prayers }: { prayers: PrayerRow[] }) {
           <h1 style="max-width:30ch">
             "for in <span class="em">Him</span> we live and move and have our being"
           </h1>
-          <p style="font-size:14px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);margin-top:14px">
+          <p style="font-size:14px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-top:14px">
             Acts 17:28
           </p>
           <p class="lede" style="margin-left:auto;margin-right:auto">
