@@ -8,6 +8,7 @@ import { ServicesPage } from './pages/services'
 import { ResourcesPage } from './pages/resources'
 import { PrayerGardenPage } from './pages/prayer-garden'
 import { LadiesRetreatPage } from './pages/ladies-retreat'
+import { ContactPage } from './pages/contact'
 import { AdminPage } from './pages/admin'
 import { sendPrayerRequestEmail } from './lib/email'
 
@@ -96,6 +97,18 @@ app.get('/ladies-retreat', (c) => {
       path="/ladies-retreat"
     >
       <LadiesRetreatPage />
+    </Layout>
+  )
+})
+
+app.get('/contact', (c) => {
+  return c.html(
+    <Layout
+      title="Contact Us — YANA"
+      description="Ask a question, offer your time, support the work, or share a prayer request — reach the YANA Ministries team here."
+      path="/contact"
+    >
+      <ContactPage />
     </Layout>
   )
 })

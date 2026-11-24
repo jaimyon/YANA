@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { href: '/prayer-garden', label: 'Prayer Garden' },
   { href: '/services', label: 'Services' },
   { href: '/resources', label: 'Resources' },
-  { href: '#connect', label: 'Contact Us' },
+  { href: '/contact', label: 'Contact Us' },
 ]
 
 export const Layout: FC<LayoutProps> = ({
@@ -57,11 +57,11 @@ export const Layout: FC<LayoutProps> = ({
                   {item.label}
                 </a>
               ))}
-              <a class="btn btn-solid navlinks-cta" href="#connect" data-set-reason="give">
+              <a class="btn btn-solid navlinks-cta" href="/contact?reason=give" data-set-reason="give">
                 Donate
               </a>
             </nav>
-            <a class="btn btn-solid navbar-cta" href="#connect" data-set-reason="give">
+            <a class="btn btn-solid navbar-cta" href="/contact?reason=give" data-set-reason="give">
               Donate
             </a>
             <button class="navtoggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
@@ -71,206 +71,6 @@ export const Layout: FC<LayoutProps> = ({
         </header>
 
         {children}
-
-        {/* ======================= SHARED FOOTER CTA / CONTACT FORM ======================= */}
-        <section class="footer-cta" id="connect">
-          <div class="wrap">
-            <div>
-              <p class="kicker">Let's connect</p>
-              <h2>
-                Ask a question, offer your time, <span class="em" style="color:var(--sunflower)">support the work</span>, or just say hello.
-              </h2>
-              <p style="margin-top:18px;max-width:46ch">
-                One form, four doors. Tell us why you're reaching out and we'll make sure the
-                right person gets back to you — usually within a day or two. If it's a prayer
-                request, our prayer team reads every single one, every morning.
-              </p>
-              <ul style="list-style:none;margin:28px 0 0;padding:0;font-size:14.6px;color:#D9C3AA">
-                <li style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14)">
-                  💬 <b style="color:#fff">Have a question?</b> About Sundays, kids check-in,
-                  anything.
-                </li>
-                <li style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14)">
-                  🙌 <b style="color:#fff">Want to volunteer?</b> We'll connect you with a team
-                  that fits.
-                </li>
-                <li style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14)">
-                  🧡 <b style="color:#fff">Want to support YANA?</b> We'll walk you through ways
-                  to give.
-                </li>
-                <li style="padding:10px 0">
-                  📬 <b style="color:#fff">Just want updates?</b> We'll add you to our weekly
-                  note — no spam, ever.
-                </li>
-              </ul>
-            </div>
-
-            <div class="pane warm" style="padding:36px 32px">
-              <form id="connectForm">
-                <input type="hidden" id="reasonInput" name="reason" value="question" />
-                <label
-                  style="font-size:11.2px;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:#C7AF95;display:block;margin-bottom:10px"
-                >
-                  I'm reaching out to...
-                </label>
-                <div class="reason-pills" id="reasonPills">
-                  <button type="button" class="reason-pill active" data-reason="question">
-                    💬 Ask a question
-                  </button>
-                  <button type="button" class="reason-pill" data-reason="volunteer">
-                    🙌 Volunteer
-                  </button>
-                  <button type="button" class="reason-pill" data-reason="give">
-                    🧡 Support YANA
-                  </button>
-                  <button type="button" class="reason-pill" data-reason="prayer">
-                    🕊️ Prayer request
-                  </button>
-                  <button type="button" class="reason-pill" data-reason="updates">
-                    📬 Get updates
-                  </button>
-                </div>
-
-                <div id="formFields">
-                  <div class="field">
-                    <label for="cname">Name (or leave blank)</label>
-                    <input id="cname" name="name" type="text" placeholder="First name" />
-                  </div>
-                  <div class="field">
-                    <label for="cemail">Email</label>
-                    <input
-                      id="cemail"
-                      name="email"
-                      type="email"
-                      placeholder="you@email.com"
-                    />
-                  </div>
-                  <div class="field">
-                    <label for="cmessage" id="messageLabel">
-                      Your message
-                    </label>
-                    <textarea
-                      id="cmessage"
-                      name="message"
-                      rows={3}
-                      placeholder="What's on your mind?"
-                    ></textarea>
-                  </div>
-                  <div class="field" id="prayerShareField" style="display:none">
-                    <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
-                      <input
-                        type="checkbox"
-                        id="shareOnWall"
-                        name="share_on_wall"
-                        checked
-                        style="width:auto;margin-top:3px"
-                      />
-                      <span>
-                        Share this (anonymously, if you'd like) on our{' '}
-                        <a href="/prayer-garden" style="color:var(--sunflower);text-decoration:underline">
-                          Prayer Garden
-                        </a>{' '}
-                        — uncheck to keep it just between you and our prayer team.
-                      </span>
-                    </label>
-                  </div>
-                </div>
-
-                <button class="btn btn-solid" type="submit" id="connectSubmit" style="margin-top:20px;width:100%;justify-content:center">
-                  Send it
-                </button>
-                <p class="fine" id="connectFine">
-                  We'll never share your info. Usually a reply within 1–2 days.
-                </p>
-              </form>
-
-              <div class="form-success" id="formSuccess">
-                <div class="icon">🙏</div>
-                <h3 style="color:#fff">Got it — thank you.</h3>
-                <p style="color:#D9C3AA;margin-top:8px">
-                  Someone from our team will be in touch soon. You are not alone.
-                </p>
-              </div>
-
-              <button
-                type="button"
-                id="newsletterToggle"
-                class="btn btn-ghost"
-                style="margin-top:22px;width:100%;justify-content:center;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.25);color:#F0E3CE"
-                aria-expanded="false"
-                aria-controls="newsletterPanel"
-              >
-                📬 Sign Up For Newsletter
-              </button>
-
-              <div id="newsletterPanel" style="display:none;margin-top:18px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)">
-                <form id="newsletterForm">
-                  <label
-                    style="font-size:11.2px;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:#C7AF95;display:block;margin-bottom:10px"
-                  >
-                    I'd like to receive...
-                  </label>
-
-                  <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer;margin-bottom:10px">
-                    <input
-                      type="checkbox"
-                      id="wantsNewsletter"
-                      name="wants_newsletter"
-                      checked
-                      style="width:auto;margin-top:3px"
-                    />
-                    <span>The weekly email newsletter — a short note in your inbox.</span>
-                  </label>
-                  <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-weight:500;font-size:13.6px;letter-spacing:0;color:#D9C3AA;cursor:pointer">
-                    <input
-                      type="checkbox"
-                      id="wantsBooklet"
-                      name="wants_booklet"
-                      style="width:auto;margin-top:3px"
-                    />
-                    <span>The Monthly Messages Booklet, mailed to my home.</span>
-                  </label>
-
-                  <div class="field">
-                    <label for="nname">Name</label>
-                    <input id="nname" name="name" type="text" placeholder="Your name" required />
-                  </div>
-                  <div class="field">
-                    <label for="nemail">Email</label>
-                    <input id="nemail" name="email" type="email" placeholder="you@email.com" required />
-                  </div>
-                  <div class="field" id="mailingAddressField" style="display:none">
-                    <label for="naddress">Mailing address</label>
-                    <textarea
-                      id="naddress"
-                      name="mailing_address"
-                      rows={2}
-                      placeholder="Street, city, state, ZIP"
-                    ></textarea>
-                  </div>
-
-                  <button
-                    class="btn btn-solid"
-                    type="submit"
-                    id="newsletterSubmit"
-                    style="margin-top:16px;width:100%;justify-content:center"
-                  >
-                    Sign me up
-                  </button>
-                  <p class="fine">We'll never share your info. Unsubscribe anytime.</p>
-                </form>
-
-                <div class="form-success" id="newsletterSuccess">
-                  <div class="icon">📬</div>
-                  <h3 style="color:#fff">You're on the list!</h3>
-                  <p style="color:#D9C3AA;margin-top:8px">
-                    Thanks for signing up — you are not alone.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <footer>
           <div class="wrap footer-links">

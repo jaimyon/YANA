@@ -71,7 +71,7 @@ export function ResourcesPage() {
               <li>Organized into four sections of spiritual growth</li>
               <li>$15 — reach out below to order your copy</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/contact?reason=question" data-set-reason="question">
               Order this book
             </a>
           </div>
@@ -109,7 +109,7 @@ export function ResourcesPage() {
               <li>Answers three questions: Who, What, and Why of God</li>
               <li>$5 — reach out below to order your copy</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/contact?reason=question" data-set-reason="question">
               Order this book
             </a>
           </div>
@@ -151,7 +151,7 @@ export function ResourcesPage() {
               <li>A lifetime practice, not just a one-time read</li>
               <li>$5 — reach out below to order your copy</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/contact?reason=question" data-set-reason="question">
               Order this book
             </a>
           </div>
@@ -208,7 +208,7 @@ export function ResourcesPage() {
             Reach out below to order a book, ask a question, or get a recommendation for where
             to start.
           </p>
-          <a class="btn btn-solid" href="#connect" data-set-reason="question">
+          <a class="btn btn-solid" href="/contact?reason=question" data-set-reason="question">
             Get in touch
           </a>
         </div>

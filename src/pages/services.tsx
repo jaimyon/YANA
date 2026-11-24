@@ -68,7 +68,7 @@ export function ServicesPage() {
               <li>Short, Scripture-rooted reflections</li>
               <li>Free, always — unsubscribe anytime</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="updates">
+            <a class="btn btn-ghost" href="/contact?reason=updates" data-set-reason="updates">
               Sign up for daily email
             </a>
           </div>
@@ -104,7 +104,7 @@ export function ServicesPage() {
               <li>A full month of day-by-day reflections</li>
               <li>A quiet gift for someone who needs one</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="updates">
+            <a class="btn btn-ghost" href="/contact?reason=updates" data-set-reason="updates">
               Request the booklet
             </a>
           </div>
@@ -182,7 +182,7 @@ export function ServicesPage() {
               <li>Topics on faith, healing, and restoration</li>
               <li>Available for in-person and virtual events</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/contact?reason=question" data-set-reason="question">
               Request a speaker
             </a>
           </div>
@@ -207,7 +207,7 @@ export function ServicesPage() {
             Whether it's a daily word, a monthly booklet, a weekend retreat, or a speaker for
             your event — reach out below and someone from our team will get back to you.
           </p>
-          <a class="btn btn-solid" href="#connect" data-set-reason="question">
+          <a class="btn btn-solid" href="/contact?reason=question" data-set-reason="question">
             Get in touch
           </a>
         </div>

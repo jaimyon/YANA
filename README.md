@@ -4,8 +4,8 @@
 - **Name**: YANA (You Are Not Alone)
 - **Goal**: A warm, bright, inviting church-ministry website that merges two earlier design concepts ("hearth" + "sunlit") into one cohesive site people want to return to.
 - **Features**:
-  - Home, About, Ministries, and Prayer Wall pages sharing one nav + one footer contact form
-  - Single shared "Let's connect" form on every page with a reason-pill selector (question / volunteer / give / prayer / updates) that changes its own label, placeholder and fine print via JS
+  - Home, About, Ministries, and Prayer Wall pages sharing one nav + one footer
+  - Dedicated Contact Us page (`/contact`) with the shared "Let's connect" form and a reason-pill selector (question / volunteer / give / prayer / updates) that changes its own label, placeholder and fine print via JS; every "Donate", "Volunteer", "Order", "Sign up" etc. link across the site deep-links to `/contact?reason=...` to preselect the right pill
   - Prayer requests submitted through either the Prayer Garden page or the shared contact form (when reason = prayer and "share on wall" is checked) are stored in Cloudflare D1 and shown publicly
   - Scrolling "Names of God" marquee, "Sundays at YANA" schedule, text-over-image sections (Unapologetically-Faithful-style), and a Shannon-Dvorak-style personal About page with fun facts and family photos
   - Services page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker) with a 4-up card grid linking down to matching detail sections on the same page
@@ -28,6 +28,7 @@
 | GET | `/services` | Services page (Daily Email Message, Monthly Messages Booklet, Annual Ladies Retreat, Event Speaker) |
 | GET | `/resources` | Resources page (A Right Relationship, Praying with God, Praise Be to God, Other Suggestions) |
 | GET | `/ladies-retreat` | Dedicated Annual Ladies Retreat page (intro, picture gallery, testimonials, sign-up form) |
+| GET | `/contact` | Dedicated Contact Us page (shared "Let's connect" form + newsletter signup panel). Accepts `?reason=question\|volunteer\|give\|prayer\|updates` to preselect a reason pill |
 | POST | `/api/prayer-requests` | Body: `{ name?, message, is_public? }` → inserts into `prayer_requests` |
 | POST | `/api/contact` | Body: `{ name?, email?, reason, message?, share_on_wall? }` → inserts into `contact_messages`; if `reason === 'prayer'` and `share_on_wall` is true, also inserts into `prayer_requests` |
 | POST | `/api/newsletter` | Body: `{ name, email, wants_newsletter?, wants_booklet?, mailing_address? }` → inserts into `newsletter_signups`. Requires `name` and `email`; requires `mailing_address` when `wants_booklet` is true (enforced both client- and server-side) |
@@ -44,8 +45,8 @@
 - **Seed data**: `seed.sql` (8 sample prayer requests for local demo)
 
 ## User Guide
-- Browse Home / About / Prayer Garden / Services from the top nav (mobile: hamburger menu).
-- Scroll to the bottom of any page, or click "Contact Us" in the header/footer, to reach the shared contact form.
+- Browse Home / About / Prayer Garden / Services / Resources / Contact Us from the top nav (mobile: hamburger menu).
+- Click "Contact Us" in the header or footer (or any "Donate", "Volunteer", "Order this book", "Sign up" etc. link throughout the site) to reach the dedicated `/contact` page and its shared contact form.
 - Pick a reason pill (question, volunteer, give, prayer, updates) — the form adapts its label and fine print.
 - If the reason is "prayer request," you can optionally check a box to also share it (anonymously if you like) on the public Prayer Garden.
 - Below the contact form, click "Sign Up For Newsletter" to open the newsletter panel: check the weekly email newsletter and/or the monthly booklet, enter your name and email, and — if you checked the booklet — your mailing address (the field appears and becomes required automatically).

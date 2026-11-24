@@ -22,28 +22,28 @@ export function MinistriesPage() {
       <section class="reveal" style="padding-top:0">
         <div class="wrap">
           <div class="cards-4">
-            <a class="ccard" href="#connect" data-set-reason="volunteer" style="text-decoration:none">
+            <a class="ccard" href="/contact?reason=volunteer" data-set-reason="volunteer" style="text-decoration:none">
               <span class="idx">01</span>
               <h3>Kids &amp; Families</h3>
               <p>Nursery to Grade 6, every Sunday. Safe, silly, and rooted in Scripture.</p>
               <img src={IMAGES.familyGuitarPark} alt="Family spending time together outdoors" />
               <span class="link">Volunteer with kids →</span>
             </a>
-            <a class="ccard" href="#connect" data-set-reason="volunteer" style="text-decoration:none">
+            <a class="ccard" href="/contact?reason=volunteer" data-set-reason="volunteer" style="text-decoration:none">
               <span class="idx">02</span>
               <h3>Youth</h3>
               <p>Grades 7–12 on Friday nights. Games, honest talks, and a leader who prays for you by name.</p>
               <img src={IMAGES.friendsWalking} alt="A group of young people walking together outdoors" />
               <span class="link">Join a youth team →</span>
             </a>
-            <a class="ccard" href="#connect" data-set-reason="volunteer" style="text-decoration:none">
+            <a class="ccard" href="/contact?reason=volunteer" data-set-reason="volunteer" style="text-decoration:none">
               <span class="idx">03</span>
               <h3>Serve &amp; Outreach</h3>
               <p>Packing food hampers, winter coat drives, and a weekly meal for our neighbourhood.</p>
               <img src={IMAGES.clothingDonation} alt="Volunteers sorting donations to give to the community" />
               <span class="link">Start serving →</span>
             </a>
-            <a class="ccard" href="#connect" data-set-reason="question" style="text-decoration:none">
+            <a class="ccard" href="/contact?reason=question" data-set-reason="question" style="text-decoration:none">
               <span class="idx">04</span>
               <h3>Small Groups</h3>
               <p>Twelve groups meeting across the city, midweek, in homes. New groups open each term.</p>
@@ -84,7 +84,7 @@ export function MinistriesPage() {
               <li>Seasonal retreats twice a year</li>
               <li>A prayer chain that actually prays, fast</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/contact?reason=question" data-set-reason="question">
               Learn more
             </a>
           </div>
@@ -120,7 +120,7 @@ export function MinistriesPage() {
               <li>Accountability groups of 3–4</li>
               <li>An annual service weekend with the whole family</li>
             </ul>
-            <a class="btn btn-ghost" href="#connect" data-set-reason="question">
+            <a class="btn btn-ghost" href="/contact?reason=question" data-set-reason="question">
               Learn more
             </a>
           </div>
@@ -138,7 +138,7 @@ export function MinistriesPage() {
             You don't need a title or years of experience — just a willingness to show up. Tell
             us what you love doing (or what you've never tried) and we'll find a spot for you.
           </p>
-          <a class="btn btn-solid" href="#connect" data-set-reason="volunteer">
+          <a class="btn btn-solid" href="/contact?reason=volunteer" data-set-reason="volunteer">
             I'd like to volunteer
           </a>
         </div>

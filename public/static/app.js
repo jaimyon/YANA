@@ -119,13 +119,21 @@
     });
   }
 
-  // allow deep-linking e.g. /#connect?reason=volunteer or data attribute triggers
+  // allow deep-linking e.g. /contact?reason=volunteer or data attribute triggers
   document.querySelectorAll('[data-set-reason]').forEach(function (el) {
     el.addEventListener('click', function (e) {
       var reason = el.getAttribute('data-set-reason');
       setReason(reason);
     });
   });
+
+  // on the contact page itself, preselect the reason pill from ?reason=... in the URL
+  if (pillsWrap) {
+    var urlReason = new URLSearchParams(window.location.search).get('reason');
+    if (urlReason && REASON_COPY[urlReason]) {
+      setReason(urlReason);
+    }
+  }
 
   // ---- shared footer contact form submit ----
   var connectForm = document.getElementById('connectForm');
